@@ -60,7 +60,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
       <Navbar activeTab={activeTab} setActiveTab={switchTab} />
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6">
@@ -93,46 +93,46 @@ export default function App() {
         )}
       </main>
 
-      {/* Institutional Footer with SEO-friendly quick links */}
-      <footer className="bg-slate-900 border-t border-slate-800 py-8 px-4 mt-12 text-xs text-slate-400">
+      {/* Institutional Light Footer */}
+      <footer className="bg-white border-t border-slate-200 py-8 px-4 mt-12 text-xs text-slate-500 shadow-sm">
         <div className="max-w-7xl mx-auto space-y-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <span className="font-bold text-white tracking-wide text-sm">
+              <span className="font-bold text-slate-900 tracking-wide text-sm">
                 MargDristi AI (मार्गदृष्टि)
               </span>
-              <span className="text-slate-600">|</span>
-              <span>North East Seva First Innovation Challenge (NESFIC) 2026</span>
+              <span className="text-slate-300">|</span>
+              <span className="font-medium text-slate-600">North East Seva First Innovation Challenge (NESFIC) 2026</span>
             </div>
 
-            <div className="flex items-center gap-4 text-[11px] text-slate-400 flex-wrap justify-center">
-              <a href="#tutorial" onClick={() => switchTab('tutorial')} className="hover:text-cyan-300 transition">
+            <div className="flex items-center gap-4 text-[11px] text-slate-600 font-medium flex-wrap justify-center">
+              <a href="#tutorial" onClick={() => switchTab('tutorial')} className="hover:text-blue-700 transition">
                 Application Tutorial
               </a>
               <span>•</span>
-              <a href="#inspection" onClick={() => switchTab('video')} className="hover:text-cyan-300 transition">
+              <a href="#inspection" onClick={() => switchTab('video')} className="hover:text-blue-700 transition">
                 Live Video Simulator
               </a>
               <span>•</span>
-              <a href="#map" onClick={() => switchTab('map')} className="hover:text-cyan-300 transition">
+              <a href="#map" onClick={() => switchTab('map')} className="hover:text-blue-700 transition">
                 Assam GIS Map
               </a>
               <span>•</span>
-              <a href="#prioritisation" onClick={() => switchTab('prioritisation')} className="hover:text-cyan-300 transition">
+              <a href="#prioritisation" onClick={() => switchTab('prioritisation')} className="hover:text-blue-700 transition">
                 IRC:82 Engine
               </a>
               <span>•</span>
-              <a href="#infographics" onClick={() => switchTab('infographics')} className="hover:text-cyan-300 transition">
+              <a href="#infographics" onClick={() => switchTab('infographics')} className="hover:text-blue-700 transition">
                 16:9 Infographics
               </a>
               <span>•</span>
-              <a href="#proposal" onClick={() => switchTab('proposal')} className="hover:text-cyan-300 transition">
+              <a href="#proposal" onClick={() => switchTab('proposal')} className="hover:text-blue-700 transition">
                 NESFIC Proposal
               </a>
             </div>
           </div>
 
-          <div className="pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+          <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-2">
             <div>
               Department of Innovation, Incubation and Startups &amp; Public Works Department (PWD), Government of Assam.
             </div>
