@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">GOVERNANCE & WORKFLOW AUDIT</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">CLOSED-LOOP PWD GOVERNANCE & CONTRACTOR REPAIR AUDIT</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">End-to-End Operational Workflow from Edge Defect Capture to Automated Verification and Invoice Release</text>
+    </g>
+  
+
+    <!-- 4 Circular Role Stations -->
+    <!-- Station 1: Junior Engineer (Surveyor) -->
+    <g transform="translate(60, 180)">
+      <rect width="410" height="690" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)" />
+      <rect width="410" height="60" rx="14" fill="#eff6ff" />
+      <circle cx="45" cy="30" r="16" fill="#1e40af" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#1e40af">JUNIOR ENGINEER (JE)</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">ROLE: MOBILE FIELD SURVEYOR</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: Windshield Survey</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Mounts device on PWD patrol vehicle</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Taps "Start Survey: NH-27 Nagaon"</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Hands-free driving at 60 km/h</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Zero distraction, automated logging</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Output: 100% Offline Edge Storage</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Real-Time Data Capture</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Continuous defect segmentation</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Sub-meter GPS coordinate tagging</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Automated camera shock filtering</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Privacy scrubbing of faces &amp; plates</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Sync: Automatic upload via 4G/Wi-Fi</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="370" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">FIELD METRICS GENERATED</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Chainage Km Marks (e.g. Km 12+450)</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Pothole Length x Width x Depth</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Cracking Surface Area (m²)</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• GPS Heading &amp; Vehicle Speed</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• Time Elapsed: 45 min per 50 km</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 1 to 2 -->
+    <g transform="translate(480, 520)">
+      <path d="M 0 0 L 30 0" stroke="#0284c7" stroke-width="4" />
+      <polygon points="30,-6 40,0 30,6" fill="#0284c7" />
+    </g>
+
+    <!-- Station 2: Assistant Executive Engineer (AEE) -->
+    <g transform="translate(530, 180)">
+      <rect width="410" height="690" rx="14" fill="#ffffff" stroke="#67e8f9" stroke-width="2" filter="url(#shadow)" />
+      <rect width="410" height="60" rx="14" fill="#ecfeff" />
+      <circle cx="45" cy="30" r="16" fill="#0891b2" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#0891b2">ASST. EXECUTIVE ENGINEER</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">ROLE: SUB-DIVISION VALIDATOR</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: Spatial Defect Triage</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Reviews auto-flagged severe defects</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Inspects 100m segment PCI ratings</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Verifies high-hazard potholes (&gt;50mm)</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Confirms pavement distress boundaries</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Output: Validated Defect Registry</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">GIS Heatmap Analysis</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Visual inspection of sub-division roads</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Overlay flood zone vulnerability</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Flags urgent safety patches (&lt;48h)</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Groups localized defects into stretches</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Forward: Submits to Executive Engineer</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="370" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">SUB-DIVISION OVERSIGHT</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Defect False-Positive Scrubbing</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Localized Traffic Divert Advisory</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Emergency Temporary Cold Patch Order</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Review Speed: &lt; 15 min / 50 km stretch</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• 100% Elimination of Paper Work</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 2 to 3 -->
+    <g transform="translate(950, 520)">
+      <path d="M 0 0 L 30 0" stroke="#059669" stroke-width="4" />
+      <polygon points="30,-6 40,0 30,6" fill="#059669" />
+    </g>
+
+    <!-- Station 3: Executive Engineer (EE) -->
+    <g transform="translate(1000, 180)">
+      <rect width="410" height="690" rx="14" fill="#ffffff" stroke="#6ee7b7" stroke-width="2" filter="url(#shadow)" />
+      <rect width="410" height="60" rx="14" fill="#ecfdf5" />
+      <circle cx="45" cy="30" r="16" fill="#059669" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#059669">EXECUTIVE ENGINEER (EE)</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">ROLE: DIVISION HEAD &amp; SANCTION</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: IRC:82 Prioritisation</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Executes multi-criteria ranking engine</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Optimizes budget across available funds</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Compares Patch vs Resurface vs Overlay</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Generates APWD-SoR Bill of Quantities</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Output: Tender-Ready Work Package</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Digital Work Order Issuance</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Cryptographically signs work orders</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Dispatches to empaneled contractor app</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Defines completion SLA (e.g. 7 days)</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Enforces geo-fenced repair boundaries</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Integration: PWD e-Prastuti Sync</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="370" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">DIVISION IMPACT</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Objective Grant Allocation Without Bias</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 28% Reduction in Pavement Life-Cycle Cost</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Real-Time Contractor Performance Rating</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Automated Legislative Assembly Reports</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• Transparent Public Works Auditing</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 3 to 4 -->
+    <g transform="translate(1420, 520)">
+      <path d="M 0 0 L 30 0" stroke="#f59e0b" stroke-width="4" />
+      <polygon points="30,-6 40,0 30,6" fill="#f59e0b" />
+    </g>
+
+    <!-- Station 4: Contractor & Quality Control -->
+    <g transform="translate(1470, 180)">
+      <rect width="390" height="690" rx="14" fill="#ffffff" stroke="#fcd34d" stroke-width="2" filter="url(#shadow)" />
+      <rect width="390" height="60" rx="14" fill="#fefce8" />
+      <circle cx="45" cy="30" r="16" fill="#d97706" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">4</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#d97706">CONTRACTOR &amp; QC AUDIT</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#b45309">ROLE: FIELD REPAIR &amp; PROOF</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="350" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: Geo-Fenced Repair</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Mobile app navigates to exact GPS pin</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Executes pothole patch or resurfacing</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Adheres to APWD technical specs</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Taps "Complete Repair" on-site</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Requirement: On-Site Geo-Fencing</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="350" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">AI Visual Verification Loop</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Uploads post-repair photograph</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Edge model performs feature matching</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Confirms defect elimination</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Generates tamper-proof before/after pair</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Authorization: Invoice Release</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="350" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">ANTI-FRAUD BENEFIT</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 100% Elimination of Ghost Billing</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Cryptographic Timestamp &amp; GPS Tag</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Fast-Track Payment for Good Contractors</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Automated Audit Dossier for AG Assam</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#fcd34d">• Defect Resolved Status Closed</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">TRANSPARENT PWD GOVERNANCE CIRCLE:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">Continuous Inspection → Algorithmic Prioritisation → Automated Tender BoQ → AI Before/After Verification → Automated Invoice Clearance</text>
+      <rect x="1500" y="24" width="260" height="38" rx="6" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1" />
+      <text x="1630" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">ZERO-LEAKAGE AUDIT</text>
+    </g>
+  
+</svg>

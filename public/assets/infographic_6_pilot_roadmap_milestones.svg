@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">STAGE-GATE MILESTONE PLAN</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">9-MONTH ENGINEERING DELIVERY ROADMAP & ASSAM FIELD PILOT</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Staged Implementation Lifecycle From Requirements Discovery to 50 km Highway Corridor Validation</text>
+    </g>
+  
+
+    <!-- 5 Phase Milestone Columns -->
+    <!-- Phase 1 -->
+    <g transform="translate(60, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 1: MONTH 1 - 2</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M1 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Discovery &amp; Grounding</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• PWD Assam Stakeholder Sign-off</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• IRC:82 Taxonomy Harmonization</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• Hardware Mounting Specs Finalized</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• North-East Dataset Protocol Formed</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• System Requirements Spec (SRS)</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Approved Operational SRS Document</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• 4x Prototype Edge Dashcam Kits</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• PWD Division Consultation Minutes</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: Chief Engineer (Roads)</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• AI Lead (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Geospatial Architect (100%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• PWD Civil Consultant (50%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 2 -->
+    <g transform="translate(425, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 2: MONTH 2 - 4</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M2 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Edge-AI Vision Model</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• 15,000+ Image Dataset Curated</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• Wet Asphalt &amp; Shadow Augmentation</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• YOLOv11n Training on A100 GPUs</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• INT8 Quantization &amp; TensorRT</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Offline Edge Caching Engine</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Model Weights (14.2 MB Footprint)</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• mAP@0.5 >= 88% Benchmark Report</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• Edge Inference &lt; 28 ms (&gt;35 FPS)</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: AI Evaluation Board</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• AI Lead (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Data Annotation Team (2 FTE)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Mobile App Engineer (100%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 3 -->
+    <g transform="translate(790, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 3: MONTH 4 - 6</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M3 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Spatial GIS &amp; IRC Engine</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• PostGIS Centerline Snapping Logic</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• 100m Dynamic Segment Graph</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• ASTM D6433 PCI Calculation Module</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• IRC:82 Multi-Criteria Ranking Core</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• APWD Schedule of Rates BoQ Engine</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Deployed Spatial Database &amp; APIs</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• Algorithmic Decision Engine v1.0</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• PCI Calculation Accuracy &gt; 92%</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: Pavement Consultant</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Geospatial Architect (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Full-Stack Developer (100%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• PWD Civil Consultant (50%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 4 -->
+    <g transform="translate(1155, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 4: MONTH 6 - 7</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M4 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Full-Stack MVP Hardening</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• Android Dashcam Survey App Finalized</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• Web GIS MapLibre Executive Portal</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• Automated Work Order Dispatch PDF</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• Contractor Pre/Post Photo Verification</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• End-to-End Stress &amp; Offline Tests</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Integrated Working Web &amp; Mobile MVP</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• Pre/Post Repair Verification Engine</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• Complete API &amp; Security Audit</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: NESFIC Mid-Term Review</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Full-Stack Developer (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Mobile App Engineer (100%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• QA &amp; Test Engineer (100%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 5 -->
+    <g transform="translate(1520, 180)">
+      <rect width="340" height="530" rx="12" fill="#ffffff" stroke="#10b981" stroke-width="2" filter="url(#shadow)" />
+      <rect width="340" height="46" rx="12" fill="#d1fae5" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#065f46">PHASE 5: MONTH 7 - 9</text>
+      <rect x="235" y="12" width="90" height="24" rx="4" fill="#a7f3d0" />
+      <text x="280" y="28" font-family="sans-serif" font-size="11" font-weight="800" fill="#064e3b" text-anchor="middle">M5 PILOT</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#047857">50 km Highway Pilot</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• NH-27 Guwahati-Nagaon Corridor</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• Side-by-Side Manual vs AI Dual Survey</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• Monsoon Rain &amp; Sunlight Calibration</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• PWD Field Staff Training Workshops</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Final Acceptance Certification</text>
+
+        <rect x="0" y="160" width="304" height="150" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#065f46">FINAL COMMISSIONING:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#1e293b">• 50 km Pilot Audit Report</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#1e293b">• PWD Acceptance Certificate</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#1e293b">• State-Wide Scaling Blueprint</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="800" fill="#059669">Status: Commercial Procurement Ready</text>
+
+        <rect x="0" y="330" width="304" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Field Operations Lead (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• AI Model Lead (50%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• PWD Division Liaison (100%)</text>
+      </g>
+    </g>
+
+    <!-- Bottom Pilot Corridor Showcase -->
+    <g transform="translate(60, 730)">
+      <rect width="1800" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="1800" height="40" rx="14" fill="#f8fafc" />
+      <text x="25" y="26" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">DESIGNATED 50 KM FIELD PILOT CORRIDOR: NH-27 (GUWAHATI - JAGIROAD - NAGAON WORKS DIVISION)</text>
+      <text x="1480" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#0284c7">HIGHWAY TESTBED CALIBRATION</text>
+
+      <g transform="translate(30, 60)">
+        <rect width="550" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#1e3a8a">Section A: Guwahati Urban-Periurban (Km 0 - 15)</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="12" fill="#475569">• High-density traffic, bus lanes, bridge expansion joints</text>
+        <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#475569">• Tests multi-lane defect localization &amp; shadow filtering</text>
+        <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">• Speed: 30-50 km/h | 100% Pedestrian Face Privacy Anonymization</text>
+      </g>
+
+      <g transform="translate(615, 60)">
+        <rect width="550" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#1e3a8a">Section B: Jagiroad Floodplain Embankment (Km 15 - 35)</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="12" fill="#475569">• Annual water immersion zone, high water table, heavy freight</text>
+        <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#475569">• Calibrates moisture stripping, ravelling &amp; edge drop-off detection</text>
+        <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="700" fill="#d97706">• Validates flood vulnerability weighting in IRC:82 prioritisation</text>
+      </g>
+
+      <g transform="translate(1200, 60)">
+        <rect width="570" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#1e3a8a">Section C: Nagaon Agricultural &amp; Rural Bypass (Km 35 - 50)</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="12" fill="#475569">• Clay mud deposits, variable asphalt ages, rural road junctions</text>
+        <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#475569">• Benchmarks against PWD Junior Engineer manual survey teams</text>
+        <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="700" fill="#0284c7">• Validates automated BoQ generation against APWD Schedule of Rates</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">NESFIC 2026 OUTCOME GUARANTEE:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">Ready for PWD Commissioning by Month 9 • Turnkey Deployment with Zero Specialized Vehicles Required • Government of Assam First Customer Adoption</text>
+      <rect x="1500" y="24" width="260" height="38" rx="6" fill="#047857" stroke="#34d399" stroke-width="1" />
+      <text x="1630" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">PILOT VALIDATION READY</text>
+    </g>
+  
+</svg>

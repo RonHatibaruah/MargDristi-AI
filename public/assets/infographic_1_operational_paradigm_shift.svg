@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">NESFIC-D-05 • DEEP-TECH INNOVATION</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">ASSAM PWD HIGHWAY MAINTENANCE: PARADIGM SHIFT</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Transforming North-East Road Asset Management From Subjective Inspection to Continuous Real-Time Edge-AI Diagnostics</text>
+    </g>
+  
+    
+    <!-- Left Column: Legacy Workflow -->
+    <g transform="translate(60, 180)">
+      <rect width="875" height="740" rx="16" fill="#ffffff" stroke="#fecdd3" stroke-width="2" filter="url(#shadow)" />
+      <rect width="875" height="56" rx="16" fill="#ffe4e6" />
+      <path d="M 0 40 L 0 56 L 875 56 L 875 40 Z" fill="#ffe4e6" />
+      
+      <circle cx="40" cy="28" r="14" fill="#e11d48" />
+      <text x="40" y="33" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">✕</text>
+      <text x="68" y="34" font-family="sans-serif" font-size="18" font-weight="800" fill="#9f1239">THE LEGACY MANUAL APPROACH (Current State Vulnerabilities)</text>
+      
+      <!-- Box 1 -->
+      <g transform="translate(30, 80)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">1. Windshield Subjectivity & Latency</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Physical visual checks cover &lt;15% of Assam network quarterly. Uncalibrated visual eye estimations</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">lead to massive inter-division variance and delayed handwritten register records.</text>
+      </g>
+      
+      <!-- Box 2 -->
+      <g transform="translate(30, 210)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">2. Post-Monsoon Disaster Amplification</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Heavy Brahmaputra flooding causes rapid water ingress. Manual reporting takes 3-6 weeks,</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">letting minor ravelling and micro-cracks deteriorate into hazardous structural cratering.</text>
+      </g>
+      
+      <!-- Box 3 -->
+      <g transform="translate(30, 340)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">3. Prohibitive Capital & Operational Costs</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Imported Network Survey Vehicles (NSV/ROMDAS) cost ₹1.5 - ₹3.0 Crore each with ₹1,200/km survey fees.</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">Bulky vans cannot navigate flood-damaged embankments or narrow rural MDRs.</text>
+      </g>
+
+      <!-- Box 4 -->
+      <g transform="translate(30, 470)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">4. Suboptimal Budget Allocation & Fraud Risk</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Lacking objective spatial condition indices, resurfacing funds are distributed reactively.</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">Contractor patch repairs lack cryptographic audit proof, creating ghost billing risks.</text>
+      </g>
+      
+      <!-- Metric Footer Left -->
+      <g transform="translate(30, 610)">
+        <rect width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="92" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">5 km/d</text>
+        <text x="92" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Survey Speed</text>
+        
+        <rect x="210" width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="302" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">₹1.8 Cr+</text>
+        <text x="302" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Equipment CapEx</text>
+
+        <rect x="420" width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="512" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">3-6 Wks</text>
+        <text x="512" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Reporting Lag</text>
+
+        <rect x="630" width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="722" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">&lt; 15%</text>
+        <text x="722" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Quarterly Coverage</text>
+      </g>
+    </g>
+
+    <!-- Right Column: MargDristi AI Solution -->
+    <g transform="translate(985, 180)">
+      <rect width="875" height="740" rx="16" fill="#ffffff" stroke="#a7f3d0" stroke-width="2" filter="url(#shadow)" />
+      <rect width="875" height="56" rx="16" fill="#d1fae5" />
+      <path d="M 0 40 L 0 56 L 875 56 L 875 40 Z" fill="#d1fae5" />
+      
+      <circle cx="40" cy="28" r="14" fill="#059669" />
+      <text x="40" y="33" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">✓</text>
+      <text x="68" y="34" font-family="sans-serif" font-size="18" font-weight="800" fill="#065f46">MARGDRISTI AI: THE CONTINUOUS EDGE-VISION REVOLUTION</text>
+
+      <!-- Box 1 -->
+      <g transform="translate(30, 80)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">1. Edge-AI Smartphone / Dashcam Vision</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Lightweight YOLOv11n running on mobile NPU at 60 km/h survey speeds. Real-time bounding</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">boxes for potholes, cracks, rutting, and edge-breaks with 100% offline edge caching.</text>
+      </g>
+
+      <!-- Box 2 -->
+      <g transform="translate(30, 210)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">2. Sub-Meter Geospatial & PCI Indexing</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Syncs defect telemetry with 10Hz GNSS GPS and road centerline vector graphs. Dynamically computes</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">standardized ASTM D6433 Pavement Condition Index (PCI 0-100) per 100-meter segment.</text>
+      </g>
+
+      <!-- Box 3 -->
+      <g transform="translate(30, 340)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">3. Algorithmic IRC:82 Maintenance Prioritisation</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Synthesizes distress density, traffic volume (CVPD/AADT), monsoon flood vulnerability, and</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">Assam PWD Schedule of Rates to generate ranked, cost-optimized repair work packages.</text>
+      </g>
+
+      <!-- Box 4 -->
+      <g transform="translate(30, 470)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">4. Closed-Loop Pre/Post-Repair Verification</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Contractors execute repairs pinned to GPS coordinates. Mobile uploads of completed patches</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">undergo AI visual feature matching before automated sign-off and invoice approval.</text>
+      </g>
+
+      <!-- Metric Footer Right -->
+      <g transform="translate(30, 610)">
+        <rect width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="92" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">200+ km/d</text>
+        <text x="92" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Fleet Coverage</text>
+
+        <rect x="210" width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="302" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">&lt; ₹35k</text>
+        <text x="302" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Per-Kit Hardware</text>
+
+        <rect x="420" width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="512" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">&lt; 5 Min</text>
+        <text x="512" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Turnaround Time</text>
+
+        <rect x="630" width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="722" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">89.4%</text>
+        <text x="722" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Detection mAP@0.5</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">CORE IMPACT METRICS FOR ASSAM PWD:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">85% Reduction in Inspection Turnaround • 28% Life-Cycle Cost Savings • Zero Distracted Driving (Hands-free) • 100% Audit-Ready GIS Telemetry</text>
+      <rect x="1490" y="24" width="270" height="38" rx="6" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1" />
+      <text x="1625" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">IRC:82-2015 COMPLIANT</text>
+    </g>
+  
+</svg>

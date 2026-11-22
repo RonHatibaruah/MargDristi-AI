@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">DECISION ENGINE FORMULATION</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">ALGORITHMIC MAINTENANCE PRIORITISATION MATRIX</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Multi-Criteria Decision Engine Formulated Under IRC:82-2015 Civil Guidelines and Assam Environmental Factors</text>
+    </g>
+  
+
+    <!-- 4 Converging Decision Pillars -->
+    <!-- Pillar 1 -->
+    <g transform="translate(60, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#eff6ff" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#1e40af">PILLAR 1: PAVEMENT DISTRESS (35%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">ASTM D6433 &amp; IRC:82 Score:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• Pothole Density Index (PDI / 100m)</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• Structural Fatigue Alligator Area (m²)</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Longitudinal/Transverse Crack Width</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Wheel-Path Rut Depth (mm)</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Surface Ravelling &amp; Stripping Ratio</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Edge Break Embankment Erosion</text>
+        
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_distress = ∑ (w_i × Area_i × Sev_i)</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Where Sev = 1.0 (Low), 2.5 (Med), 5.0 (High)</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Potholes weighted 3x higher than ravelling</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.35</text>
+      </g>
+    </g>
+
+    <!-- Pillar 2 -->
+    <g transform="translate(520, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#67e8f9" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#ecfeff" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#0891b2">PILLAR 2: TRAFFIC VOLUME (25%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Road Hierarchy &amp; Intensity:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• National Highway (NH) Factor: 1.5x</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• State Highway (SH) Factor: 1.25x</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Major District Road (MDR): 1.0x</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Commercial Vehicles per Day (CVPD)</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Passenger Car Units (PCU Density)</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Heavy Axle Freight Corridors (Tea/Coal)</text>
+
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_traffic = log10(CVPD) × H_road</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Prevents spending budget on empty roads</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Protects vital economic supply lines</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.25</text>
+      </g>
+    </g>
+
+    <!-- Pillar 3 -->
+    <g transform="translate(980, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#6ee7b7" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#ecfdf5" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#047857">PILLAR 3: FLOOD VULNERABILITY (20%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Assam Climate &amp; Terrain Factors:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• Brahmaputra Basin Inundation Risk</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• Embankment Height &amp; Slope Stability</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Historical Submersion Frequency</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Longitudinal Roadside Drainage Slope</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Sub-Base Soil Plasticity &amp; CBR Index</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Proximity to River Channel Erosion</text>
+
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_flood = FloodZone × (1 / DrainSlope)</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Prioritizes repairs BEFORE monsoons strike</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Prevents road washaways during high flood</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.20</text>
+      </g>
+    </g>
+
+    <!-- Pillar 4 -->
+    <g transform="translate(1435, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#fcd34d" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#fefce8" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#b45309">PILLAR 4: ECONOMIC LIFE-CYCLE (20%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Assam PWD SoR &amp; TCO:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• Preventative vs Reconstruction Ratio</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• ₹1 in Slurry Seal saves ₹6 in Overlay</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Proximity to Hospitals &amp; Freight Hubs</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Contractor Gang Mobilization Cost</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Clustered Work Package Savings</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Available Division Budget Envelope</text>
+
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_econ = SavingsRatio × CritFacility</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Optimizes capital efficiency across FY</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Prevents delayed maintenance deterioration</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.20</text>
+      </g>
+    </g>
+
+    <!-- Master Unified Formula & Action Pathways -->
+    <g transform="translate(60, 630)">
+      <rect width="1800" height="295" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="1800" height="48" rx="14" fill="#0f172a" />
+      <text x="30" y="31" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">MASTER MARGDRISTI PRIORITISATION FORMULA: COMPOSITE REPAIR INDEX (CRI)</text>
+      <text x="1350" y="31" font-family="monospace" font-size="15" font-weight="700" fill="#ffffff">CRI = 0.35(S_dist) + 0.25(S_traf) + 0.20(S_flood) + 0.20(S_econ)</text>
+
+      <!-- 3 Clear Action Streams -->
+      <g transform="translate(30, 75)">
+        <!-- Action 1: Urgent Safety -->
+        <rect width="560" height="195" rx="10" fill="#fff1f2" stroke="#fca5a5" stroke-width="1.5" />
+        <rect width="560" height="38" rx="10" fill="#fee2e2" />
+        <text x="20" y="25" font-family="sans-serif" font-size="15" font-weight="800" fill="#991b1b">STREAM A: URGENT SAFETY ACTION (SLA: 48 HOURS)</text>
+        <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trigger: CRI &gt; 80 OR Any High-Severity Pothole &gt; 50 mm</text>
+        <text x="20" y="90" font-family="sans-serif" font-size="13" fill="#475569">• High hazard to two-wheelers, buses, and commercial freight</text>
+        <text x="20" y="112" font-family="sans-serif" font-size="13" fill="#475569">• Generates immediate emergency work order to nearest PWD gang</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="13" fill="#475569">• Intervention: Cold-mix/Rapid Bitumen mastic asphalt patching</text>
+        <text x="20" y="165" font-family="sans-serif" font-size="13" font-weight="800" fill="#b91c1c">Goal: Zero Accident Casualties &amp; Emergency Traffic Restoration</text>
+      </g>
+
+      <g transform="translate(620, 75)">
+        <!-- Action 2: Preventative Preservation -->
+        <rect width="560" height="195" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" />
+        <rect width="560" height="38" rx="10" fill="#dcfce7" />
+        <text x="20" y="25" font-family="sans-serif" font-size="15" font-weight="800" fill="#15803d">STREAM B: PREVENTATIVE PRESERVATION (SLA: 30 DAYS)</text>
+        <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trigger: CRI 50 - 80 | PCI 55 - 75 (Fair/Satisfactory)</text>
+        <text x="20" y="90" font-family="sans-serif" font-size="13" fill="#475569">• Pavement structurally intact but moisture stripping starting</text>
+        <text x="20" y="112" font-family="sans-serif" font-size="13" fill="#475569">• Seals hairline cracks before monsoon rains penetrate base</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="13" fill="#475569">• Intervention: Slurry Seal, Micro-surfacing, Fog Spray Seal</text>
+        <text x="20" y="165" font-family="sans-serif" font-size="13" font-weight="800" fill="#15803d">Goal: Extends Pavement Life by 4-6 Years at 1/5th Reconstruction Cost</text>
+      </g>
+
+      <g transform="translate(1210, 75)">
+        <!-- Action 3: Structural Overlay -->
+        <rect width="560" height="195" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" />
+        <rect width="560" height="38" rx="10" fill="#dbeafe" />
+        <text x="20" y="25" font-family="sans-serif" font-size="15" font-weight="800" fill="#1e40af">STREAM C: STRUCTURAL OVERLAY / TENDER (ANNUAL PLAN)</text>
+        <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trigger: Continuous Segment PCI &lt; 40 Across &gt; 500 Meters</text>
+        <text x="20" y="90" font-family="sans-serif" font-size="13" fill="#475569">• Sub-base failure, extensive alligator fatigue, or deep rutting</text>
+        <text x="20" y="112" font-family="sans-serif" font-size="13" fill="#475569">• Automated aggregation into division e-Procurement packages</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="13" fill="#475569">• Intervention: Milling + 50mm Dense Bituminous Macadam (DBM)</text>
+        <text x="20" y="165" font-family="sans-serif" font-size="13" font-weight="800" fill="#1e40af">Goal: Long-Term Heavy Freight Capacity &amp; Flood Immersion Resilience</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">CIVIL ENGINEERING GOVERNANCE STANDARDS:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">IRC:82-2015 (Code of Practice for Maintenance of Bituminous Surfaces) • IRC:SP:16 (Surface Unevenness) • APWD Schedule of Rates 2024</text>
+      <rect x="1510" y="24" width="250" height="38" rx="6" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+      <text x="1635" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">DATA-DRIVEN CAPEX</text>
+    </g>
+  
+</svg>
