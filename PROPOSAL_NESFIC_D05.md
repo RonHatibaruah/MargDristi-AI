@@ -73,7 +73,7 @@ We have engineered a fully functional, production-ready prototype consisting of:
 
 ### Supporting Artifacts & Links
 - **Proof of Work Document:** Full technical PoW PDF including wireframes, confusion matrices, edge hardware benchmarks, and field test photos.
-- **Interactive Prototype / Live Demo:** Accessible on local/hosted environment (`http://localhost:5173`).
+- **Interactive Prototype / Live Demo:** Accessible on live production environment at [https://margdrishti.coolmindslab.com](https://margdrishti.coolmindslab.com) (or local dev environment `http://localhost:5173`).
 - **Product Architecture & Video Demo:** High-resolution walk-through detailing edge inference, GIS clustering, and work-order dispatch.
 
 ---
@@ -387,6 +387,6 @@ A comprehensive 15-page Proof of Work PDF is submitted, containing:
 5. High-Impact 16:9 technological framework infographics matching institutional engineering standards.
 
 ### Submission Links & Resources:
-- **Demo / Product Video URL:** `https://margdristi.assam.gov.in/demo-video` *(or local interactive prototype walkthrough)*
-- **Product / Website URL:** `https://margdristi.assam.gov.in` *(Prototype running on `http://localhost:5173`)*
+- **Demo / Product Video URL:** `https://margdrishti.coolmindslab.com/#tutorial` *(interactive guided walkthrough)*
+- **Product / Website URL:** `https://margdrishti.coolmindslab.com` *(Live production deployment)*
 - **Additional Supporting Material:** Attached technical whitepaper detailing the mathematical formulation of the IRC:82 Prioritisation Index and edge TensorRT optimization metrics.

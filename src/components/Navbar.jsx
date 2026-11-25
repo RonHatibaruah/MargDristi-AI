@@ -1,5 +1,5 @@
 import React from 'react';
-import { Video, Map, Cpu, FileCheck2, FileText, Image, ShieldAlert, Wifi, Navigation, BookOpen, HelpCircle } from 'lucide-react';
+import { Video, Map, Cpu, FileCheck2, FileText, Image, ShieldAlert, Wifi, Navigation, BookOpen, HelpCircle, ExternalLink } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab }) {
   const navItems = [
@@ -35,6 +35,17 @@ export default function Navbar({ activeTab, setActiveTab }) {
         </div>
 
         <div className="flex items-center gap-3 text-[11px] text-slate-300">
+          {/* Live Demo Link */}
+          <a
+            href="https://margdrishti.coolmindslab.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 bg-emerald-950 text-emerald-300 hover:text-white hover:bg-emerald-900 border border-emerald-700/80 px-2.5 py-0.5 rounded-full font-semibold transition"
+          >
+            <ExternalLink className="w-3 h-3 text-emerald-400" />
+            <span>margdrishti.coolmindslab.com</span>
+          </a>
+
           {/* Direct Tutorial Link in Header */}
           <button
             onClick={() => {

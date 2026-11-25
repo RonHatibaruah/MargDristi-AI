@@ -106,6 +106,10 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-4 text-[11px] text-slate-600 font-medium flex-wrap justify-center">
+              <a href="https://margdrishti.coolmindslab.com" target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-bold hover:underline transition">
+                Live: margdrishti.coolmindslab.com
+              </a>
+              <span>•</span>
               <a href="#tutorial" onClick={() => switchTab('tutorial')} className="hover:text-blue-700 transition">
                 Application Tutorial
               </a>
