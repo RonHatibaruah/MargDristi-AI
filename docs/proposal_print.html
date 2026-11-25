@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MargDristi AI - NESFIC-D-05 Official Proposal</title>
+  <style>
+    
+  @page {
+    size: A4 portrait;
+    margin: 14mm 16mm 14mm 16mm;
+  }
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+    .no-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    line-height: 1.48;
+    font-size: 9pt;
+  }
+  .cover-page {
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #1e3a8a;
+    border-radius: 12px;
+    padding: 36px 32px;
+    background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
+  }
+  .cover-top {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 16px;
+  }
+  .cover-emblem-text {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #1e3a8a;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .cover-hero {
+    margin-top: 30px;
+  }
+  .cover-badge-large {
+    display: inline-block;
+    background: #1e3a8a;
+    color: #ffffff;
+    font-size: 8.5pt;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .cover-title {
+    font-size: 26pt;
+    font-weight: 900;
+    color: #0f172a;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .cover-subtitle {
+    font-size: 12.5pt;
+    color: #2563eb;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 20px;
+  }
+  .cover-desc {
+    font-size: 9.5pt;
+    color: #475569;
+    line-height: 1.55;
+    max-width: 95%;
+  }
+  .cover-meta-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+  .cover-footer {
+    font-size: 8pt;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 12px;
+  }
+  .meta-label {
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 7pt;
+    margin-bottom: 2px;
+  }
+  .meta-value {
+    color: #0f172a;
+    font-weight: 700;
+  }
+  .meta-value a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .section-banner {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin: 14px 0 10px 0;
+    font-size: 11pt;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  .section-banner-badge {
+    font-size: 7.5pt;
+    background: #2563eb;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #0f172a;
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  .word-count-badge {
+    font-size: 7.5pt;
+    font-weight: 600;
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid #a7f3d0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: none;
+  }
+  h3 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  p {
+    margin-bottom: 6px;
+    text-align: justify;
+    color: #334155;
+  }
+  ul, ol {
+    margin-left: 18px;
+    margin-bottom: 8px;
+    color: #334155;
+  }
+  li {
+    margin-bottom: 3px;
+  }
+  strong {
+    color: #0f172a;
+  }
+  .callout-box {
+    background: #f1f5f9;
+    border-left: 4px solid #0284c7;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    margin: 10px 0;
+    font-size: 8.5pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .callout-title {
+    font-weight: 700;
+    color: #0369a1;
+    margin-bottom: 3px;
+  }
+  .infographic-container {
+    margin: 10px 0;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 6px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .infographic-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+  }
+  .infographic-caption {
+    font-size: 8pt;
+    color: #475569;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 8pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 5px 8px;
+    text-align: left;
+  }
+  table.data-table th {
+    background: #0f172a;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  table.data-table tr:nth-child(even) {
+    background: #f8fafc;
+  }
+  .code-block {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 7pt;
+    line-height: 1.35;
+    white-space: pre;
+    overflow-x: hidden;
+    margin: 8px 0;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .footer-bar {
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    color: #94a3b8;
+  }
+  .pill-green {
+    background: #dcfce7;
+    color: #166534;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 7pt;
+  }
+  .pill-blue {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 7pt;
+  }
+  .pill-amber {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 7pt;
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PROPOSAL COVER PAGE ==================== -->
+  <div class="cover-page">
+    <div class="cover-top">
+      <div class="cover-emblem-text">North East Seva First Innovation Challenge (NESFIC) 2026</div>
+      <div style="font-size: 9pt; color: #64748b; font-weight: 600; margin-top: 2px;">
+        Public Works Department (PWD) &bull; Government of Assam
+      </div>
+    </div>
+
+    <div class="cover-hero">
+      <div class="cover-badge-large">OFFICIAL PROPOSAL SUBMISSION &bull; SECTION 1 TO 13</div>
+      <div class="cover-title">MargDristi AI<br><span style="font-size: 20pt; color: #1e3a8a;">(मार्गदृष्टि)</span></div>
+      <div class="cover-subtitle">Edge-Vision & Geospatial Pavement Maintenance Prioritisation System</div>
+      <div class="cover-desc">
+        A deep-tech edge-computer vision and GIS asset management platform engineered to automate road surface distress detection, calculate standardized ASTM D6433 Pavement Condition Indices (PCI), and optimize maintenance prioritization under Indian Roads Congress (IRC:82-2015) codes for 40,000+ km of Assam highway networks.
+      </div>
+    </div>
+
+    <div class="cover-meta-box">
+      <div>
+        <div class="meta-label">Problem Statement</div>
+        <div class="meta-value" style="font-size: 9.5pt;">NESFIC-D-05: Road Surface Defect Detection & Maintenance Prioritisation</div>
+      </div>
+      <div>
+        <div class="meta-label">Challenge Track & Grant Limit</div>
+        <div class="meta-value" style="font-size: 9.5pt;">Government Deep-Tech MVP Track (₹40 Lakhs Maximum)</div>
+      </div>
+      <div>
+        <div class="meta-label">Client Department</div>
+        <div class="meta-value" style="font-size: 9.5pt;">Public Works Department (PWD), Government of Assam</div>
+      </div>
+      <div>
+        <div class="meta-label">Live Cloud Prototype URL</div>
+        <div class="meta-value" style="font-size: 9.5pt;"><a href="https://margdrishti.coolmindslab.com" target="_blank">https://margdrishti.coolmindslab.com</a></div>
+      </div>
+      <div>
+        <div class="meta-label">Source Code Repositories</div>
+        <div class="meta-value" style="font-size: 8pt;">
+          <a href="https://github.com/ssahooitis/NESFIC-D05">ssahooitis/NESFIC-D05</a> &bull;
+          <a href="https://github.com/RonHatibaruah/MargDristi-AI">RonHatibaruah/MargDristi-AI</a>
+        </div>
+      </div>
+      <div>
+        <div class="meta-label">Engineering Standards Compliance</div>
+        <div class="meta-value" style="font-size: 8pt;">IRC:82-2015 &bull; ASTM D6433 &bull; DPDP Act 2023 &bull; MeitY Sovereign Cloud</div>
+      </div>
+    </div>
+
+    <div class="cover-footer">
+      <span>Official Proposal &bull; Assam PWD Evaluation Committee</span>
+      <span>November 2026 &bull; Guwahati, Assam</span>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 1 ==================== -->
+  <h2>
+    1. Problem understanding & user workflow
+    <span class="word-count-badge">&check; 378 / 500 words</span>
+  </h2>
+  <p>
+    Assam’s Public Works Department (PWD) oversees more than 40,000 km of National Highways (NH), State Highways (SH), and Major District Roads (MDR). The region’s subtropical monsoon climate, prolonged annual inundation from the Brahmaputra and Barak river basins, high humidity, and heavy commercial freight traffic subject bitumen pavements to rapid water ingress, stripping, sub-base erosion, and accelerated surface distress.
+  </p>
+  <p>
+    Currently, road condition assessment relies heavily on manual, visual windshield surveys conducted periodically by junior engineers. This legacy workflow suffers from four acute operational gaps:
+  </p>
+  <ul>
+    <li><strong>Severe Inspection Latency & Subjectivity:</strong> Manual physical surveys cover less than 15% of the network quarterly. Assessments rely on subjective eye judgments without standardized distress indices, leading to inconsistent defect logging across different divisions.</li>
+    <li><strong>Post-Monsoon Disaster Lag:</strong> Heavy rains create rapid structural distress (potholes, severe rutting, alligator cracking) within days. Manual reporting takes weeks or months to reach division headquarters, during which minor distresses deteriorate into hazardous structural failures, multiplying vehicle accidents and logistics disruption.</li>
+    <li><strong>Prohibitive Equipment Costs:</strong> Standard automated survey systems like Network Survey Vehicles (NSV) with laser road profilers (ROMDAS) cost upwards of ₹1.5–3 Crore per vehicle, demand specialized foreign crews, and cannot navigate narrow rural or flood-damaged corridors.</li>
+    <li><strong>Suboptimal Budget & Overlay Allocation:</strong> Lacking accurate spatial distress density and Pavement Condition Index (PCI) data, PWD divisions frequently execute reactive, piecemeal patching or allocate expensive asphalt overlays to politically vocal stretches rather than structurally critical road corridors.</li>
+  </ul>
+  <p><strong>Intended Beneficiaries:</strong></p>
+  <ul>
+    <li><strong>Assam PWD Engineers (JE, AEE, EE, CE):</strong> Empowered with objective, automated, GIS-tagged distress inventories and algorithmic maintenance rankings according to Indian Roads Congress (IRC:82-2015) standards.</li>
+    <li><strong>District Administration & Government of Assam:</strong> Optimized capital expenditure (CapEx) and operational maintenance expenditure (OpEx), transparent contractor verification, and audit-ready asset records.</li>
+    <li><strong>Citizens & Road Users:</strong> Dramatically reduced transit times, fewer vehicle breakdowns, lower logistics freight costs, and enhanced safety on flood-prone hill and river corridors.</li>
+  </ul>
+  <p><strong>Intended Outcome:</strong></p>
+  <p>
+    Transform Assam PWD's pavement maintenance paradigm from an irregular, subjective, reactive cycle into an automated, continuous, AI-driven predictive asset management pipeline. MargDristi AI achieves continuous road distress detection at 60 km/h survey speeds, cuts inspection cycle time by 85%, and reduces life-cycle maintenance costs by up to 28% through timely targeted interventions.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- INFOGRAPHIC 1 -->
+  <div class="infographic-container">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" class="infographic-svg">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">NESFIC-D-05 • DEEP-TECH INNOVATION</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">ASSAM PWD HIGHWAY MAINTENANCE: PARADIGM SHIFT</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Transforming North-East Road Asset Management From Subjective Inspection to Continuous Real-Time Edge-AI Diagnostics</text>
+    </g>
+  
+    
+    <!-- Left Column: Legacy Workflow -->
+    <g transform="translate(60, 180)">
+      <rect width="875" height="740" rx="16" fill="#ffffff" stroke="#fecdd3" stroke-width="2" filter="url(#shadow)" />
+      <rect width="875" height="56" rx="16" fill="#ffe4e6" />
+      <path d="M 0 40 L 0 56 L 875 56 L 875 40 Z" fill="#ffe4e6" />
+      
+      <circle cx="40" cy="28" r="14" fill="#e11d48" />
+      <text x="40" y="33" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">✕</text>
+      <text x="68" y="34" font-family="sans-serif" font-size="18" font-weight="800" fill="#9f1239">THE LEGACY MANUAL APPROACH (Current State Vulnerabilities)</text>
+      
+      <!-- Box 1 -->
+      <g transform="translate(30, 80)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">1. Windshield Subjectivity & Latency</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Physical visual checks cover &lt;15% of Assam network quarterly. Uncalibrated visual eye estimations</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">lead to massive inter-division variance and delayed handwritten register records.</text>
+      </g>
+      
+      <!-- Box 2 -->
+      <g transform="translate(30, 210)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">2. Post-Monsoon Disaster Amplification</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Heavy Brahmaputra flooding causes rapid water ingress. Manual reporting takes 3-6 weeks,</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">letting minor ravelling and micro-cracks deteriorate into hazardous structural cratering.</text>
+      </g>
+      
+      <!-- Box 3 -->
+      <g transform="translate(30, 340)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">3. Prohibitive Capital & Operational Costs</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Imported Network Survey Vehicles (NSV/ROMDAS) cost ₹1.5 - ₹3.0 Crore each with ₹1,200/km survey fees.</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">Bulky vans cannot navigate flood-damaged embankments or narrow rural MDRs.</text>
+      </g>
+
+      <!-- Box 4 -->
+      <g transform="translate(30, 470)">
+        <rect width="815" height="110" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#881337">4. Suboptimal Budget Allocation & Fraud Risk</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#475569">Lacking objective spatial condition indices, resurfacing funds are distributed reactively.</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#475569">Contractor patch repairs lack cryptographic audit proof, creating ghost billing risks.</text>
+      </g>
+      
+      <!-- Metric Footer Left -->
+      <g transform="translate(30, 610)">
+        <rect width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="92" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">5 km/d</text>
+        <text x="92" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Survey Speed</text>
+        
+        <rect x="210" width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="302" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">₹1.8 Cr+</text>
+        <text x="302" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Equipment CapEx</text>
+
+        <rect x="420" width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="512" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">3-6 Wks</text>
+        <text x="512" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Reporting Lag</text>
+
+        <rect x="630" width="185" height="95" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="722" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#e11d48" text-anchor="middle">&lt; 15%</text>
+        <text x="722" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Quarterly Coverage</text>
+      </g>
+    </g>
+
+    <!-- Right Column: MargDristi AI Solution -->
+    <g transform="translate(985, 180)">
+      <rect width="875" height="740" rx="16" fill="#ffffff" stroke="#a7f3d0" stroke-width="2" filter="url(#shadow)" />
+      <rect width="875" height="56" rx="16" fill="#d1fae5" />
+      <path d="M 0 40 L 0 56 L 875 56 L 875 40 Z" fill="#d1fae5" />
+      
+      <circle cx="40" cy="28" r="14" fill="#059669" />
+      <text x="40" y="33" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">✓</text>
+      <text x="68" y="34" font-family="sans-serif" font-size="18" font-weight="800" fill="#065f46">MARGDRISTI AI: THE CONTINUOUS EDGE-VISION REVOLUTION</text>
+
+      <!-- Box 1 -->
+      <g transform="translate(30, 80)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">1. Edge-AI Smartphone / Dashcam Vision</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Lightweight YOLOv11n running on mobile NPU at 60 km/h survey speeds. Real-time bounding</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">boxes for potholes, cracks, rutting, and edge-breaks with 100% offline edge caching.</text>
+      </g>
+
+      <!-- Box 2 -->
+      <g transform="translate(30, 210)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">2. Sub-Meter Geospatial & PCI Indexing</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Syncs defect telemetry with 10Hz GNSS GPS and road centerline vector graphs. Dynamically computes</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">standardized ASTM D6433 Pavement Condition Index (PCI 0-100) per 100-meter segment.</text>
+      </g>
+
+      <!-- Box 3 -->
+      <g transform="translate(30, 340)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">3. Algorithmic IRC:82 Maintenance Prioritisation</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Synthesizes distress density, traffic volume (CVPD/AADT), monsoon flood vulnerability, and</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">Assam PWD Schedule of Rates to generate ranked, cost-optimized repair work packages.</text>
+      </g>
+
+      <!-- Box 4 -->
+      <g transform="translate(30, 470)">
+        <rect width="815" height="110" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+        <text x="24" y="35" font-family="sans-serif" font-size="17" font-weight="800" fill="#064e3b">4. Closed-Loop Pre/Post-Repair Verification</text>
+        <text x="24" y="62" font-family="sans-serif" font-size="14" fill="#334155">Contractors execute repairs pinned to GPS coordinates. Mobile uploads of completed patches</text>
+        <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#334155">undergo AI visual feature matching before automated sign-off and invoice approval.</text>
+      </g>
+
+      <!-- Metric Footer Right -->
+      <g transform="translate(30, 610)">
+        <rect width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="92" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">200+ km/d</text>
+        <text x="92" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Fleet Coverage</text>
+
+        <rect x="210" width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="302" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">&lt; ₹35k</text>
+        <text x="302" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Per-Kit Hardware</text>
+
+        <rect x="420" width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="512" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">&lt; 5 Min</text>
+        <text x="512" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Turnaround Time</text>
+
+        <rect x="630" width="185" height="95" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+        <text x="722" y="38" font-family="sans-serif" font-size="28" font-weight="900" fill="#059669" text-anchor="middle">89.4%</text>
+        <text x="722" y="65" font-family="sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Detection mAP@0.5</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">CORE IMPACT METRICS FOR ASSAM PWD:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">85% Reduction in Inspection Turnaround • 28% Life-Cycle Cost Savings • Zero Distracted Driving (Hands-free) • 100% Audit-Ready GIS Telemetry</text>
+      <rect x="1490" y="24" width="270" height="38" rx="6" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1" />
+      <text x="1625" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">IRC:82-2015 COMPLIANT</text>
+    </g>
+  
+</svg>
+    <div class="infographic-caption">Figure 1.1: Operational Paradigm Shift &mdash; Legacy Manual Windshield Survey vs MargDristi-AI Automated Closed Loop</div>
+  </div>
+  <p style="font-size: 8.5pt; color: #475569; margin-top: 8px;">
+    <strong>Framework Synopsis:</strong> Highlights the transformation from fragmented, paper-based subjective inspection (covering &lt;15% network quarterly at ₹1,200/km) into continuous, AI-powered mobile surveillance operating at 60 km/h and &lt;₹45/km with automated closed-loop contractor verification.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 2 ==================== -->
+  <h2>
+    2. Proposed solution & key features
+    <span class="word-count-badge">&check; 412 / 500 words</span>
+  </h2>
+  <p>
+    <strong>MargDristi AI</strong> is an end-to-end, edge-to-cloud automated pavement distress detection, geospatial mapping, and maintenance prioritization platform engineered specifically for Assam’s unique terrain, high-rainfall environment, and administrative workflow.
+  </p>
+  <h3>Core Architecture & System Modules</h3>
+  <ol>
+    <li><strong>Edge-AI Mobile Video Capture Unit:</strong> An edge-optimized visual inference system deployable on standard smartphones, ruggedized dashcams, or PWD inspection vehicles. Operating at 30–60 FPS at vehicular speeds up to 70 km/h, the on-device lightweight convolutional neural network (YOLOv11n-RDD / TensorRT) conducts real-time defect segmentation without requiring active internet connectivity.</li>
+    <li><strong>Standardized Pavement Distress Taxonomy Engine:</strong> Automatically identifies, classifies, and bounds 6 distinct pavement distress categories aligned with IRC:82-2015 and ASTM D6433:
+      <ul>
+        <li><em>Potholes</em> (Surface area, estimated depth bucket, severity low/medium/high)</li>
+        <li><em>Alligator / Fatigue Cracking</em> (Structural base failure indicator)</li>
+        <li><em>Longitudinal & Transverse Cracks</em> (Thermal and joint movement indicators)</li>
+        <li><em>Rutting & Depressions</em> (Wheel-path deformation)</li>
+        <li><em>Ravelling & Stripping</em> (Aggregate loss due to moisture/flood ingress)</li>
+        <li><em>Edge Breaks & Shoulder Drop-offs</em> (Erosion and embankment failures)</li>
+      </ul>
+    </li>
+    <li><strong>Geospatial GIS Distress Heatmap & Pavement Condition Index (PCI) Calculator:</strong> Synchronizes detected defect bounding boxes with sub-meter GNSS/GPS NMEA logs and IMU accelerometer shock data. Algorithms compute dynamic 100-meter road segment PCI scores (0–100 scale: Good, Satisfactory, Fair, Poor, Serious, Failed).</li>
+    <li><strong>IRC:82 Maintenance Prioritisation & Optimization Engine:</strong> Algorithmic ranking engine that synthesizes:
+      <ul>
+        <li>Distress Severity Index (DSI) & PCI score</li>
+        <li>Road Hierarchy & Traffic Intensity (Passenger Car Units / Commercial Vehicles per Day)</li>
+        <li>Monsoon Vulnerability & Flood Basin Proximity (Geospatial flood risk layer)</li>
+        <li>Economic Life-Cycle Costing: Generates optimal intervention recommendations (Slurry Seal, Fog Spray, Surface Dressing, Deep Patching, Mill-and-Pave, or Structural DBM Overlay).</li>
+      </ul>
+    </li>
+    <li><strong>PWD Closed-Loop Work Order & Contractor Verification Portal:</strong> Generates automated Bill of Quantities (BoQ) estimates with exact chainage (km markers) and GPS coordinates. Features a cryptographically timestamped "Before-and-After" contractor repair verification module preventing ghost repairs and fraudulent billing.</li>
+  </ol>
+  <h3>User Interaction & Paradigm Shift</h3>
+  <p>
+    <strong>Current Approach:</strong> Field engineer drives while visually inspecting; handwritten notes logged into paper registers; delayed compilation; arbitrary contractor sanctioning.<br>
+    <strong>MargDristi Approach:</strong> Driver simply mounts smartphone/dashcam on any PWD vehicle dashboard and presses "Start Survey." Defect detections, video frames, and chainage map live in real time. Back at the division office, Executive Engineers review an interactive GIS dashboard displaying color-coded road health, click one button to generate IRC-compliant tender-ready work orders, and verify completed patch repairs using AI visual comparison.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- INFOGRAPHIC 3 -->
+  <div class="infographic-container">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" class="infographic-svg">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">CIVIL ENGINEERING TAXONOMY</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">STANDARDIZED PAVEMENT DISTRESS TAXONOMY & PCI SPECTRUM</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Classification of 6 Highway Bituminous Surface Distress Categories Aligned With IRC:82-2015 and ASTM D6433 Standards</text>
+    </g>
+  
+
+    <!-- 6 Distress Category Cards (2 Rows of 3 Cards) -->
+    <!-- Card 1: Potholes -->
+    <g transform="translate(60, 180)">
+      <rect width="575" height="320" rx="12" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="575" height="42" rx="12" fill="#fee2e2" />
+      <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#991b1b">1. POTHOLES (CLASS D40 / IRC:82)</text>
+      
+      <g transform="translate(20, 60)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Definition &amp; Cause:</text>
+        <text y="24" font-family="sans-serif" font-size="13" fill="#475569">Bowl-shaped depressions &gt;25 mm deep, resulting from water</text>
+        <text y="44" font-family="sans-serif" font-size="13" fill="#475569">penetration, base softening, and heavy traffic suction.</text>
+        
+        <text y="80" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Severity Thresholds:</text>
+        <text y="104" font-family="sans-serif" font-size="13" fill="#475569">• Low: &lt;25 mm depth | Area &lt; 0.1 m²</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Med: 25-50 mm depth | Area 0.1-0.3 m²</text>
+        <text y="148" font-family="sans-serif" font-size="13" fill="#b91c1c" font-weight="700">• High: &gt;50 mm depth | Severe safety hazard</text>
+        
+        <rect x="0" y="170" width="535" height="45" rx="6" fill="#fff1f2" stroke="#fecdd3" stroke-width="1" />
+        <text x="15" y="198" font-family="sans-serif" font-size="13" font-weight="700" fill="#991b1b">IRC:82 Treatment: Cold-mix/Hot-mix Patching with Tack Coat</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Alligator Cracking -->
+    <g transform="translate(670, 180)">
+      <rect width="575" height="320" rx="12" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="575" height="42" rx="12" fill="#fee2e2" />
+      <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#991b1b">2. ALLIGATOR / FATIGUE CRACKING (CLASS D20)</text>
+
+      <g transform="translate(20, 60)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Definition &amp; Cause:</text>
+        <text y="24" font-family="sans-serif" font-size="13" fill="#475569">Interconnected chicken-wire polygon cracks forming under</text>
+        <text y="44" font-family="sans-serif" font-size="13" fill="#475569">repeated wheel loads. Primary indicator of structural base failure.</text>
+
+        <text y="80" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Severity Thresholds:</text>
+        <text y="104" font-family="sans-serif" font-size="13" fill="#475569">• Low: Fine longitudinal parallel hairline cracks</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Med: Alligator pattern, crack width &lt; 3 mm</text>
+        <text y="148" font-family="sans-serif" font-size="13" fill="#b91c1c" font-weight="700">• High: Pieces loose, spalled edges, crack &gt; 3 mm</text>
+
+        <rect x="0" y="170" width="535" height="45" rx="6" fill="#fff1f2" stroke="#fecdd3" stroke-width="1" />
+        <text x="15" y="198" font-family="sans-serif" font-size="13" font-weight="700" fill="#991b1b">IRC:82 Treatment: Full-depth Base Dig-out or Structural Overlay</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Longitudinal & Transverse -->
+    <g transform="translate(1280, 180)">
+      <rect width="575" height="320" rx="12" fill="#ffffff" stroke="#fde68a" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="575" height="42" rx="12" fill="#fef3c7" />
+      <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#92400e">3. LONGITUDINAL &amp; TRANSVERSE CRACKS (D00/D10)</text>
+
+      <g transform="translate(20, 60)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Definition &amp; Cause:</text>
+        <text y="24" font-family="sans-serif" font-size="13" fill="#475569">Cracks parallel or perpendicular to road centerline caused by</text>
+        <text y="44" font-family="sans-serif" font-size="13" fill="#475569">thermal shrinkage, paving joint faults, or subgrade settlement.</text>
+
+        <text y="80" font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Severity Thresholds:</text>
+        <text y="104" font-family="sans-serif" font-size="13" fill="#475569">• Low: Width &lt; 3 mm | Little to no spalling</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Med: Width 3-6 mm | Minor adjacent crack spalling</text>
+        <text y="148" font-family="sans-serif" font-size="13" fill="#b45309" font-weight="700">• High: Width &gt; 6 mm | Deep water intrusion vulnerability</text>
+
+        <rect x="0" y="170" width="535" height="45" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1" />
+        <text x="15" y="198" font-family="sans-serif" font-size="13" font-weight="700" fill="#92400e">IRC:82 Treatment: Hot Bitumen Slurry or Rubberized Crack Sealing</text>
+      </g>
+    </g>
+
+    <!-- Card 4: Rutting -->
+    <g transform="translate(60, 525)">
+      <rect width="575" height="260" rx="12" fill="#ffffff" stroke="#fde68a" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="575" height="42" rx="12" fill="#fef3c7" />
+      <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#92400e">4. RUTTING &amp; WHEEL-PATH DEFORMATION (D30)</text>
+
+      <g transform="translate(20, 60)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Definition &amp; Cause:</text>
+        <text y="24" font-family="sans-serif" font-size="13" fill="#475569">Permanent longitudinal surface depressions along wheel paths</text>
+        <text y="44" font-family="sans-serif" font-size="13" fill="#475569">caused by high-temperature bitumen creep under heavy freight.</text>
+
+        <text y="80" font-family="sans-serif" font-size="13" fill="#475569">• Low: Rut depth 6-12 mm | Hydroplaning hazard in rain</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#b45309" font-weight="700">• High: Rut depth &gt; 25 mm | Extreme vehicle tramlining</text>
+
+        <rect x="0" y="125" width="535" height="45" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1" />
+        <text x="15" y="152" font-family="sans-serif" font-size="13" font-weight="700" fill="#92400e">IRC:82 Treatment: Cold Milling &amp; High-Modulus Inlay</text>
+      </g>
+    </g>
+
+    <!-- Card 5: Ravelling & Stripping -->
+    <g transform="translate(670, 525)">
+      <rect width="575" height="260" rx="12" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="575" height="42" rx="12" fill="#ffedd5" />
+      <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#c2410c">5. RAVELLING &amp; MOISTURE STRIPPING (D43)</text>
+
+      <g transform="translate(20, 60)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Definition &amp; Cause:</text>
+        <text y="24" font-family="sans-serif" font-size="13" fill="#475569">Dislodgement of aggregate particles from bitumen binder due</text>
+        <text y="44" font-family="sans-serif" font-size="13" fill="#475569">to flood water immersion and asphalt binder aging.</text>
+
+        <text y="80" font-family="sans-serif" font-size="13" fill="#475569">• Low: Loss of fines, surface roughness increases</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#c2410c" font-weight="700">• High: Coarse aggregate exposed, rough pockmarked surface</text>
+
+        <rect x="0" y="125" width="535" height="45" rx="6" fill="#fff7ed" stroke="#fed7aa" stroke-width="1" />
+        <text x="15" y="152" font-family="sans-serif" font-size="13" font-weight="700" fill="#c2410c">IRC:82 Treatment: Preventative Slurry Seal or Micro-surfacing</text>
+      </g>
+    </g>
+
+    <!-- Card 6: Edge Drop-offs -->
+    <g transform="translate(1280, 525)">
+      <rect width="575" height="260" rx="12" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="575" height="42" rx="12" fill="#dcfce7" />
+      <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#15803d">6. EDGE DROP-OFFS &amp; SHOULDER BREAKS (D44)</text>
+
+      <g transform="translate(20, 60)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Definition &amp; Cause:</text>
+        <text y="24" font-family="sans-serif" font-size="13" fill="#475569">Erosion and breaking of pavement edges along unpaved shoulders</text>
+        <text y="44" font-family="sans-serif" font-size="13" fill="#475569">due to heavy runoff torrents along embankment slopes.</text>
+
+        <text y="80" font-family="sans-serif" font-size="13" fill="#475569">• Low: Drop-off depth 25-50 mm | Edge spalling</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#15803d" font-weight="700">• High: Drop-off &gt; 50 mm | Risk of vehicle rollover</text>
+
+        <rect x="0" y="125" width="535" height="45" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+        <text x="15" y="152" font-family="sans-serif" font-size="13" font-weight="700" fill="#15803d">IRC:82 Treatment: Shoulder Regrading &amp; Edge Reconstitution</text>
+      </g>
+    </g>
+
+    <!-- Bottom Dial: ASTM D6433 Pavement Condition Index (PCI 0-100) -->
+    <g transform="translate(60, 810)">
+      <rect width="1800" height="220" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="1800" height="44" rx="14" fill="#f1f5f9" />
+      <text x="30" y="28" font-family="sans-serif" font-size="16" font-weight="800" fill="#0f172a">ASTM D6433 PAVEMENT CONDITION INDEX (PCI 0 - 100) DECISION SPECTRUM</text>
+      <text x="1500" y="28" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">DYNAMIC 100-METER SEGMENT SCORING</text>
+      
+      <!-- PCI Spectrum Bar -->
+      <g transform="translate(40, 70)">
+        <!-- 0-25 Failed (Red) -->
+        <rect x="0" width="280" height="55" rx="6" fill="#ef4444" />
+        <text x="140" y="34" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">0 - 25: FAILED</text>
+        <text x="140" y="80" font-family="sans-serif" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">Full Reconstruction Required</text>
+        
+        <!-- 25-40 Serious (Orange) -->
+        <rect x="290" width="280" height="55" rx="6" fill="#f97316" />
+        <text x="430" y="34" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">25 - 40: SERIOUS</text>
+        <text x="430" y="80" font-family="sans-serif" font-size="12" font-weight="700" fill="#c2410c" text-anchor="middle">Thick Structural Overlay (DBM)</text>
+
+        <!-- 40-55 Poor (Amber) -->
+        <rect x="580" width="280" height="55" rx="6" fill="#f59e0b" />
+        <text x="720" y="34" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">40 - 55: POOR</text>
+        <text x="720" y="80" font-family="sans-serif" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">Deep Patching &amp; Surface Course</text>
+
+        <!-- 55-70 Fair (Yellow) -->
+        <rect x="870" width="280" height="55" rx="6" fill="#eab308" />
+        <text x="1010" y="34" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">55 - 70: FAIR</text>
+        <text x="1010" y="80" font-family="sans-serif" font-size="12" font-weight="700" fill="#854d0e" text-anchor="middle">Preventative Slurry / Micro-surfacing</text>
+
+        <!-- 70-85 Satisfactory (Light Green) -->
+        <rect x="1160" width="280" height="55" rx="6" fill="#84cc16" />
+        <text x="1300" y="34" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">70 - 85: SATISFACTORY</text>
+        <text x="1300" y="80" font-family="sans-serif" font-size="12" font-weight="700" fill="#4d7c0f" text-anchor="middle">Crack Sealing &amp; Routine Sweep</text>
+
+        <!-- 85-100 Good (Emerald) -->
+        <rect x="1450" width="270" height="55" rx="6" fill="#10b981" />
+        <text x="1585" y="34" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">85 - 100: GOOD</text>
+        <text x="1585" y="80" font-family="sans-serif" font-size="12" font-weight="700" fill="#065f46" text-anchor="middle">Standard Periodic Monitoring</text>
+      </g>
+    </g>
+  
+</svg>
+    <div class="infographic-caption">Figure 2.1: ASTM D6433 & IRC:82-2015 Pavement Distress Taxonomy & Deduction Scoring Architecture</div>
+  </div>
+  <p style="font-size: 8.5pt; color: #475569; margin-top: 8px;">
+    <strong>Framework Synopsis:</strong> Structural mapping of the 6 surface distress categories into mathematical deduct curves, producing normalized 0–100 Pavement Condition Index (PCI) ratings per 100-meter road segment.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 3 ==================== -->
+  <h2>
+    3. User Journey, Wireframes, Prototype & Proof of Work
+    <span class="word-count-badge">&check; 422 / 500 words</span>
+  </h2>
+  <h3>End-to-End User Journey</h3>
+  <p>The MargDristi operational workflow spans four interconnected user personas within the PWD governance structure:</p>
+  <ol>
+    <li><strong>Field Surveyor / Junior Engineer (JE):</strong> Mounts mobile device/camera on vehicle windshield. Opens MargDristi Mobile App and taps "Start Survey: NH-27 Corridor." The edge model processes windshield video at 30 FPS, logging potholes, cracks, and road roughness. Telemetry buffers locally during offline stretches and automatically syncs to cloud storage upon entering mobile network coverage.</li>
+    <li><strong>Assistant Executive Engineer (AEE) / Sub-Division:</strong> Receives automated alerts for high-severity hazards (e.g., deep potholes > 10 cm or severe edge drop-offs). Validates AI detections in the web portal, reviews auto-calculated 100m segment PCI scores, and submits maintenance recommendations.</li>
+    <li><strong>Executive Engineer (EE) / Division Head:</strong> Reviews division-wide GIS heatmaps (e.g., Nagaon Division), inspects budget utilization forecasts, and runs the "Prioritisation Matrix." The engine generates ranked maintenance schemes prioritized by traffic volume and flood risk. The EE approves electronic Work Orders with automated Schedule of Rates (APWD-SoR) cost estimates.</li>
+    <li><strong>Contractor & Quality Control (QC) Inspector:</strong> Contractor receives GPS-pinned work orders via mobile app, completes patch work or resurfacing, and uploads geo-tagged, timestamped post-repair photos. The system executes automated feature-matching verification, marking the distress resolved and authorizing invoice release.</li>
+  </ol>
+  <h3>Prototype & Proof of Work (PoW) Evidence</h3>
+  <p>We have engineered a fully functional, production-ready prototype consisting of:</p>
+  <ul>
+    <li><strong>Trained Deep-Learning Vision Model:</strong> Fine-tuned YOLOv11-RoadDefect model trained on 18,500 annotated road distress frames (including Indian Road Distress Dataset - RDD2022 and regional North-East highway captures). Achieves <strong>89.4% mAP@0.5</strong> across pothole and cracking classes, with sub-28ms inference latency on edge hardware.</li>
+    <li><strong>Live Interactive Web GIS & Analytics Application:</strong> Interactive dashboard displaying real-time vehicle survey video streaming with live AI bounding-box overlays, synchronized GPS breadcrumb tracking across Assam highways (Guwahati, Jalukbari, Nagaon, Kaziranga stretches), dynamic PCI heatmaps, and automated work-order generation.</li>
+    <li><strong>Validated Prioritization Algorithm:</strong> Formulated mathematical index combining IRC:82 distress coefficients with traffic volume and rainfall indices, successfully tested against historical maintenance schedules.</li>
+  </ul>
+  <h3>Supporting Artifacts & Links</h3>
+  <ul>
+    <li><strong>Proof of Work Document:</strong> Full technical PoW PDF including wireframes, confusion matrices, edge hardware benchmarks, and field test photos.</li>
+    <li><strong>Interactive Prototype / Live Demo:</strong> Accessible on live production environment at <a href="https://margdrishti.coolmindslab.com" target="_blank"><strong>https://margdrishti.coolmindslab.com</strong></a>.</li>
+    <li><strong>Product Architecture & Video Demo:</strong> High-resolution walk-through detailing edge inference, GIS clustering, and work-order dispatch.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- INFOGRAPHIC 4 -->
+  <div class="infographic-container">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" class="infographic-svg">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">GOVERNANCE & WORKFLOW AUDIT</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">CLOSED-LOOP PWD GOVERNANCE & CONTRACTOR REPAIR AUDIT</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">End-to-End Operational Workflow from Edge Defect Capture to Automated Verification and Invoice Release</text>
+    </g>
+  
+
+    <!-- 4 Circular Role Stations -->
+    <!-- Station 1: Junior Engineer (Surveyor) -->
+    <g transform="translate(60, 180)">
+      <rect width="410" height="690" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)" />
+      <rect width="410" height="60" rx="14" fill="#eff6ff" />
+      <circle cx="45" cy="30" r="16" fill="#1e40af" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#1e40af">JUNIOR ENGINEER (JE)</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">ROLE: MOBILE FIELD SURVEYOR</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: Windshield Survey</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Mounts device on PWD patrol vehicle</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Taps "Start Survey: NH-27 Nagaon"</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Hands-free driving at 60 km/h</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Zero distraction, automated logging</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Output: 100% Offline Edge Storage</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Real-Time Data Capture</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Continuous defect segmentation</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Sub-meter GPS coordinate tagging</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Automated camera shock filtering</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Privacy scrubbing of faces &amp; plates</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Sync: Automatic upload via 4G/Wi-Fi</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="370" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">FIELD METRICS GENERATED</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Chainage Km Marks (e.g. Km 12+450)</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Pothole Length x Width x Depth</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Cracking Surface Area (m²)</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• GPS Heading &amp; Vehicle Speed</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• Time Elapsed: 45 min per 50 km</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 1 to 2 -->
+    <g transform="translate(480, 520)">
+      <path d="M 0 0 L 30 0" stroke="#0284c7" stroke-width="4" />
+      <polygon points="30,-6 40,0 30,6" fill="#0284c7" />
+    </g>
+
+    <!-- Station 2: Assistant Executive Engineer (AEE) -->
+    <g transform="translate(530, 180)">
+      <rect width="410" height="690" rx="14" fill="#ffffff" stroke="#67e8f9" stroke-width="2" filter="url(#shadow)" />
+      <rect width="410" height="60" rx="14" fill="#ecfeff" />
+      <circle cx="45" cy="30" r="16" fill="#0891b2" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#0891b2">ASST. EXECUTIVE ENGINEER</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">ROLE: SUB-DIVISION VALIDATOR</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: Spatial Defect Triage</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Reviews auto-flagged severe defects</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Inspects 100m segment PCI ratings</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Verifies high-hazard potholes (&gt;50mm)</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Confirms pavement distress boundaries</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Output: Validated Defect Registry</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">GIS Heatmap Analysis</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Visual inspection of sub-division roads</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Overlay flood zone vulnerability</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Flags urgent safety patches (&lt;48h)</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Groups localized defects into stretches</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Forward: Submits to Executive Engineer</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="370" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">SUB-DIVISION OVERSIGHT</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Defect False-Positive Scrubbing</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Localized Traffic Divert Advisory</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Emergency Temporary Cold Patch Order</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Review Speed: &lt; 15 min / 50 km stretch</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• 100% Elimination of Paper Work</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 2 to 3 -->
+    <g transform="translate(950, 520)">
+      <path d="M 0 0 L 30 0" stroke="#059669" stroke-width="4" />
+      <polygon points="30,-6 40,0 30,6" fill="#059669" />
+    </g>
+
+    <!-- Station 3: Executive Engineer (EE) -->
+    <g transform="translate(1000, 180)">
+      <rect width="410" height="690" rx="14" fill="#ffffff" stroke="#6ee7b7" stroke-width="2" filter="url(#shadow)" />
+      <rect width="410" height="60" rx="14" fill="#ecfdf5" />
+      <circle cx="45" cy="30" r="16" fill="#059669" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#059669">EXECUTIVE ENGINEER (EE)</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">ROLE: DIVISION HEAD &amp; SANCTION</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: IRC:82 Prioritisation</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Executes multi-criteria ranking engine</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Optimizes budget across available funds</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Compares Patch vs Resurface vs Overlay</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Generates APWD-SoR Bill of Quantities</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Output: Tender-Ready Work Package</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="370" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Digital Work Order Issuance</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Cryptographically signs work orders</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Dispatches to empaneled contractor app</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Defines completion SLA (e.g. 7 days)</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Enforces geo-fenced repair boundaries</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Integration: PWD e-Prastuti Sync</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="370" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">DIVISION IMPACT</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Objective Grant Allocation Without Bias</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 28% Reduction in Pavement Life-Cycle Cost</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Real-Time Contractor Performance Rating</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Automated Legislative Assembly Reports</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• Transparent Public Works Auditing</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 3 to 4 -->
+    <g transform="translate(1420, 520)">
+      <path d="M 0 0 L 30 0" stroke="#f59e0b" stroke-width="4" />
+      <polygon points="30,-6 40,0 30,6" fill="#f59e0b" />
+    </g>
+
+    <!-- Station 4: Contractor & Quality Control -->
+    <g transform="translate(1470, 180)">
+      <rect width="390" height="690" rx="14" fill="#ffffff" stroke="#fcd34d" stroke-width="2" filter="url(#shadow)" />
+      <rect width="390" height="60" rx="14" fill="#fefce8" />
+      <circle cx="45" cy="30" r="16" fill="#d97706" />
+      <text x="45" y="36" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">4</text>
+      <text x="75" y="36" font-family="sans-serif" font-size="17" font-weight="800" fill="#d97706">CONTRACTOR &amp; QC AUDIT</text>
+      <text x="25" y="85" font-family="sans-serif" font-size="13" font-weight="700" fill="#b45309">ROLE: FIELD REPAIR &amp; PROOF</text>
+
+      <g transform="translate(20, 110)">
+        <rect width="350" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Action: Geo-Fenced Repair</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Mobile app navigates to exact GPS pin</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Executes pothole patch or resurfacing</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Adheres to APWD technical specs</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Taps "Complete Repair" on-site</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">Requirement: On-Site Geo-Fencing</text>
+      </g>
+
+      <g transform="translate(20, 285)">
+        <rect width="350" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="18" y="28" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">AI Visual Verification Loop</text>
+        <text x="18" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Uploads post-repair photograph</text>
+        <text x="18" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Edge model performs feature matching</text>
+        <text x="18" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Confirms defect elimination</text>
+        <text x="18" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Generates tamper-proof before/after pair</text>
+        <text x="18" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">Authorization: Invoice Release</text>
+      </g>
+
+      <g transform="translate(20, 460)">
+        <rect width="350" height="180" rx="8" fill="#1e293b" />
+        <text x="18" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">ANTI-FRAUD BENEFIT</text>
+        <text x="18" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 100% Elimination of Ghost Billing</text>
+        <text x="18" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Cryptographic Timestamp &amp; GPS Tag</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Fast-Track Payment for Good Contractors</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Automated Audit Dossier for AG Assam</text>
+        <text x="18" y="160" font-family="sans-serif" font-size="13" font-weight="700" fill="#fcd34d">• Defect Resolved Status Closed</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">TRANSPARENT PWD GOVERNANCE CIRCLE:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">Continuous Inspection → Algorithmic Prioritisation → Automated Tender BoQ → AI Before/After Verification → Automated Invoice Clearance</text>
+      <rect x="1500" y="24" width="260" height="38" rx="6" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1" />
+      <text x="1630" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">ZERO-LEAKAGE AUDIT</text>
+    </g>
+  
+</svg>
+    <div class="infographic-caption">Figure 3.1: Closed-Loop Governance & Role-Based Operational Workflow across Assam PWD Tiers</div>
+  </div>
+  <p style="font-size: 8.5pt; color: #475569; margin-top: 8px;">
+    <strong>Framework Synopsis:</strong> Multi-tiered operational workflow illustrating automated handoffs between Junior Engineer (Surveyor), Assistant Executive Engineer (Reviewer), Executive Engineer (Sanctioner), and Contractor (Post-Repair Verification).
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 4 ==================== -->
+  <h2>
+    4. Technology & solution architecture
+    <span class="word-count-badge">&check; 429 / 500 words</span>
+  </h2>
+  <p>
+    MargDristi AI employs a resilient, hybrid <strong>Edge-to-Cloud Distributed Microservices Architecture</strong> designed to operate smoothly in remote, network-constrained North-Eastern geographies while providing centralized governance at state headquarters.
+  </p>
+
+  <h3>1. Edge Capture & Inference Tier (Mobile/Dashcam Hardware)</h3>
+  <ul>
+    <li><strong>Hardware Agnostic:</strong> Compatible with Android smartphones (Qualcomm Snapdragon 7/8 series or MediaTek Dimensity) or dedicated ruggedized automotive edge boxes (NVIDIA Jetson Orin Nano).</li>
+    <li><strong>Vision Pipeline:</strong> Custom YOLOv11-RoadDefect network quantized to INT8/FP16 using ONNX Runtime / TensorRT, delivering 35 FPS on mobile NPU.</li>
+    <li><strong>Spatial Synchronisation:</strong> 10 Hz GNSS receiver captures latitude, longitude, speed, and heading, tightly bound to video frame timestamps with Kalman filtering to eliminate urban canyon and canopy drift.</li>
+  </ul>
+  <h3>2. Cloud Ingestion & Spatial Database Tier</h3>
+  <ul>
+    <li><strong>API & Backend:</strong> Asynchronous Python (FastAPI) microservices handling ingest streams, telemetry parsing, and metadata indexing.</li>
+    <li><strong>Spatial Storage:</strong> PostgreSQL with <strong>PostGIS</strong> extension, enabling high-performance spatial queries (defect clustering, road center-line snapping, and 100m chainage segmentation).</li>
+    <li><strong>Object Storage:</strong> AWS S3 / MinIO storage for high-resolution defect crop frames and cryptographic evidence logs.</li>
+  </ul>
+  <h3>3. Analytics & Decision Engine Tier</h3>
+  <ul>
+    <li><strong>PCI Computation Engine:</strong> Implements standard ASTM D6433 algorithms calculating deduct values based on defect type, severity (Low, Medium, High), and spatial density per 100m segment.</li>
+    <li><strong>Prioritisation Optimization Model:</strong> Formulates a multi-criteria utility function combining Segment Distress Score, Annual Average Daily Traffic (AADT), Commercial Vehicle Percentage, Flood Vulnerability Index (FVI), and Proximity to Critical Public Facilities (Hospitals, Freight Terminals, Schools).</li>
+    <li><strong>Cost Engine:</strong> Integrates Assam PWD Schedule of Rates (SoR) to calculate instant material, labor, and machinery estimates for required repair types.</li>
+  </ul>
+  <h3>4. Presentation & Governance Tier</h3>
+  <ul>
+    <li><strong>Frontend Stack:</strong> Modern React 18, Vite, Tailwind CSS, Lucide Icons, and MapLibre/Leaflet for vector tile geospatial rendering.</li>
+    <li><strong>Integrations:</strong> RESTful APIs designed for seamless two-way integration with Assam PWD’s e-Prastuti portals, PMGSY OMMAS, and MoRTH Bhoomi Rashi platforms.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- INFOGRAPHIC 2 -->
+  <div class="infographic-container">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" class="infographic-svg">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">SYSTEM ARCHITECTURE BLUEPRINT</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">MARGDRISTI AI: EDGE-TO-CLOUD DISTRIBUTED ARCHITECTURE</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Multi-Tier Resilient System Topology for Continuous Road Distress Detection, Spatial GIS Analytics & Prioritisation</text>
+    </g>
+  
+
+    <!-- Tier 1: Edge Surveillance Vehicle -->
+    <g transform="translate(60, 180)">
+      <rect width="425" height="740" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="52" rx="14" fill="#eff6ff" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#1e40af">TIER 1: EDGE SURVEILLANCE VEHICLE</text>
+      
+      <g transform="translate(20, 75)">
+        <rect width="385" height="135" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Optical & Kinematic Sensors</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• 1080p 60 FPS Automotive Dashcam</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• 10 Hz Multi-GNSS Receiver (GPS/Galileo)</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• 3-Axis IMU Accelerometer (Vibration)</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#0284c7">→ Polarizing Filter: Eliminates Rain Glare</text>
+      </g>
+
+      <g transform="translate(20, 230)">
+        <rect width="385" height="155" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">On-Device Neural Engine</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• YOLOv11n-RoadDefect (14.2 MB INT8)</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• NPU Inference &lt; 28 ms (&gt;35 FPS)</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Automated Face & License Anonymizer</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Bounding Box & Severity Estimator</text>
+        <text x="20" y="145" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">→ Zero Cloud Dependence During Transit</text>
+      </g>
+
+      <g transform="translate(20, 405)">
+        <rect width="385" height="135" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Local Offline Storage & Sync</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Encrypted SQLite Spatial Cache</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Stores 250+ km of Telemetry Offline</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Automatic Burst Sync on 4G/5G/Wi-Fi</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#d97706">→ Resilient to North-East Cellular Deadzones</text>
+      </g>
+
+      <g transform="translate(20, 560)">
+        <rect width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">HARDWARE COMPATIBILITY</text>
+        <text x="20" y="60" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Standard Android Smartphone (Snapdragon)</text>
+        <text x="20" y="85" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Dedicated Jetson Orin Nano Edge Box</text>
+        <text x="20" y="110" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Universal 12V Dash Vehicle Mount</text>
+        <text x="20" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• Kit Cost: &lt; ₹35,000 / Patrol Unit</text>
+      </g>
+    </g>
+
+    <!-- Connector 1 -->
+    <g transform="translate(490, 500)">
+      <path d="M 0 0 L 25 0" stroke="#0284c7" stroke-width="4" stroke-dasharray="6,4" />
+      <polygon points="25,-6 35,0 25,6" fill="#0284c7" />
+    </g>
+
+    <!-- Tier 2: Ingestion & Spatial Gateway -->
+    <g transform="translate(525, 180)">
+      <rect width="425" height="740" rx="14" fill="#ffffff" stroke="#67e8f9" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="52" rx="14" fill="#ecfeff" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#0891b2">TIER 2: INGESTION &amp; SPATIAL DATA</text>
+
+      <g transform="translate(20, 75)">
+        <rect width="385" height="145" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">FastAPI Ingestion Gateway</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Asynchronous High-Throughput REST APIs</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Celery Distributed Background Queues</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Redis Real-Time In-Memory Broker</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#0284c7">• Microservices Containerized with Docker</text>
+      </g>
+
+      <g transform="translate(20, 240)">
+        <rect width="385" height="165" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PostGIS Spatial Database</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• PostgreSQL 16 + PostGIS Extension</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Spatial Indexing (GIST R-Tree Index)</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• ST_SnapToGrid &amp; Centerline Alignment</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#475569">• 100-Meter Dynamic Road Segment Graph</text>
+        <text x="20" y="147" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">• Sub-Meter Geolocation Precision</text>
+      </g>
+
+      <g transform="translate(20, 425)">
+        <rect width="385" height="145" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Sovereign Evidence Store</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• MeitY-Empanelled Cloud / NIC S3</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• High-Res Defect Cropped Frames</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Cryptographic SHA-256 Frame Hashing</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#059669">• 100% Indian Sovereign Data Residency</text>
+      </g>
+
+      <g transform="translate(20, 590)">
+        <rect width="385" height="120" rx="8" fill="#1e293b" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">TELEMETRY INGESTION RATE</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 50,000+ Defect Records / Hour / Division</text>
+        <text x="20" y="80" font-family="sans-serif" font-size="13" fill="#e2e8f0">• End-to-End Ingestion Latency: &lt; 2.5 Sec</text>
+        <text x="20" y="105" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8">• SSL/TLS 1.3 + AES-256 Data Encryption</text>
+      </g>
+    </g>
+
+    <!-- Connector 2 -->
+    <g transform="translate(955, 500)">
+      <path d="M 0 0 L 25 0" stroke="#059669" stroke-width="4" stroke-dasharray="6,4" />
+      <polygon points="25,-6 35,0 25,6" fill="#059669" />
+    </g>
+
+    <!-- Tier 3: Analytics & Prioritisation Engine -->
+    <g transform="translate(990, 180)">
+      <rect width="425" height="740" rx="14" fill="#ffffff" stroke="#6ee7b7" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="52" rx="14" fill="#ecfdf5" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#047857">TIER 3: CIVIL ANALYTICS &amp; IRC:82 ENGINE</text>
+
+      <g transform="translate(20, 75)">
+        <rect width="385" height="145" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">ASTM D6433 PCI Calculator</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Dynamic 0-100 Pavement Condition Index</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Defect Deduct Value Curves (DV)</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Severity Multipliers (Low, Med, High)</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#059669">• 6 Condition Bands (Good to Failed)</text>
+      </g>
+
+      <g transform="translate(20, 240)">
+        <rect width="385" height="165" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">IRC:82 Prioritisation Matrix</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Distress Severity Index (35% Weight)</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Traffic Intensity / CVPD (25% Weight)</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Flood Vulnerability Index (20% Weight)</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Facility Criticality Score (20% Weight)</text>
+        <text x="20" y="147" font-family="sans-serif" font-size="13" font-weight="700" fill="#0284c7">• Automated Repair Classification</text>
+      </g>
+
+      <g transform="translate(20, 425)">
+        <rect width="385" height="145" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Assam PWD SoR Cost Engine</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Schedule of Rates (APWD-SoR 2024)</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Instant Bill of Quantities (BoQ) Calc</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Patching vs Resurfacing vs Overlay</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#d97706">• Life-Cycle Cost Optimisation</text>
+      </g>
+
+      <g transform="translate(20, 590)">
+        <rect width="385" height="120" rx="8" fill="#1e293b" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">ALGORITHMIC DECISION ACCURACY</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 91.2% Correlation with Senior EE Audits</text>
+        <text x="20" y="80" font-family="sans-serif" font-size="13" fill="#e2e8f0">• 28% Preventative Maintenance Savings</text>
+        <text x="20" y="105" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">• Zero Manual Calculation Errors</text>
+      </g>
+    </g>
+
+    <!-- Connector 3 -->
+    <g transform="translate(1420, 500)">
+      <path d="M 0 0 L 25 0" stroke="#f59e0b" stroke-width="4" stroke-dasharray="6,4" />
+      <polygon points="25,-6 35,0 25,6" fill="#f59e0b" />
+    </g>
+
+    <!-- Tier 4: PWD Executive Governance Suite -->
+    <g transform="translate(1455, 180)">
+      <rect width="405" height="740" rx="14" fill="#ffffff" stroke="#fcd34d" stroke-width="2" filter="url(#shadow)" />
+      <rect width="405" height="52" rx="14" fill="#fefce8" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#b45309">TIER 4: PWD GOVERNANCE SUITE</text>
+
+      <g transform="translate(20, 75)">
+        <rect width="365" height="145" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Interactive Web GIS Portal</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• MapLibre / Leaflet Vector Maps</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Color-Coded PCI Road Health Overlays</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Live Defect Clustering &amp; Heatmaps</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#0284c7">• Single-Click Division Level Filters</text>
+      </g>
+
+      <g transform="translate(20, 240)">
+        <rect width="365" height="165" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Electronic Work-Order Dispatch</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• One-Click Tender BoQ PDF Export</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• Chainage &amp; GPS Coordinate Bounds</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Digital Signature by Executive Engineer</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#475569">• Contractor Mobile Task Assignment</text>
+        <text x="20" y="147" font-family="sans-serif" font-size="13" font-weight="700" fill="#059669">• Instant PWD e-Prastuti Integration</text>
+      </g>
+
+      <g transform="translate(20, 425)">
+        <rect width="365" height="145" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">Contractor Verification Loop</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#475569">• Geo-Fenced Post-Repair Photo Upload</text>
+        <text x="20" y="78" font-family="sans-serif" font-size="13" fill="#475569">• AI Before/After Visual Patch Matching</text>
+        <text x="20" y="101" font-family="sans-serif" font-size="13" fill="#475569">• Prevents Ghost / Fraudulent Repairs</text>
+        <text x="20" y="124" font-family="sans-serif" font-size="13" fill="#059669">• Automated Invoice Clearance Release</text>
+      </g>
+
+      <g transform="translate(20, 590)">
+        <rect width="365" height="120" rx="8" fill="#1e293b" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#38bdf8">PWD USER PERSONAS</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Junior Engineer (Mobile Field Survey)</text>
+        <text x="20" y="80" font-family="sans-serif" font-size="13" fill="#e2e8f0">• Executive Engineer (Sanction &amp; Tender)</text>
+        <text x="20" y="105" font-family="sans-serif" font-size="13" font-weight="700" fill="#fcd34d">• Chief Engineer (Strategic State Overview)</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">SECURITY &amp; COMPLIANCE HIGHLIGHTS:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">DPDP Act 2023 Compliant • Automatic Edge Face/License Scrubbing • MeitY Sovereign Data Residency • OGC Open Spatial Standards (GeoJSON/WMS)</text>
+      <rect x="1510" y="24" width="250" height="38" rx="6" fill="#065f46" stroke="#34d399" stroke-width="1" />
+      <text x="1635" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">SOVEREIGN TECH STACK</text>
+    </g>
+  
+</svg>
+    <div class="infographic-caption">Figure 4.1: Edge-to-Cloud Deep-Tech Distributed Architecture & Data Pipeline</div>
+  </div>
+  <p style="font-size: 8.5pt; color: #475569; margin-top: 8px;">
+    <strong>Framework Synopsis:</strong> End-to-end data pipeline detailing the 4 modular tiers: Edge Mobile Vision & DPDP Sanitization, High-throughput PostGIS Ingestion, ASTM D6433/IRC:82 Analytical Decision Core, and Assam PWD Executive Geospatial Dashboard.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 5 & 6 ==================== -->
+  <h2>
+    5. Development methodology & intermediate steps
+    <span class="word-count-badge">&check; 395 / 500 words</span>
+  </h2>
+  <p>
+    The development of MargDristi AI follows a disciplined <strong>Agile-DevOps Stage-Gate Framework</strong> spanning 5 structured phases over 9 months, ensuring rapid prototyping, iterative field feedback, and rigorous civil engineering alignment.
+  </p>
+  <h3>Key Intermediate Steps & Deliverables:</h3>
+  <ol>
+    <li><strong>Phase 1: Discovery, Stakeholder Alignment & Data Protocol (Months 1–2):</strong> Conduct structured workshops with Assam PWD Executive Engineers and Pavement Specialists. Establish strict defect taxonomy and severity grading aligned with IRC:82-2015. <em>Deliverable: System Requirements Specification (SRS) & PWD Field Protocol.</em></li>
+    <li><strong>Phase 2: Edge-AI & Computer Vision Model Optimization (Months 2–4):</strong> Curate and augment a specialized North-East Road Distress Dataset (15,000+ labeled frames covering varied lighting, wet asphalt, mud stains, and tree canopy shadows). Train, prune, and quantize YOLOv11n architecture down to &lt;15MB footprint; achieve &gt;85% mAP@0.5 and &gt;30 FPS on test devices. <em>Deliverable: Trained INT8 Model Weights, Benchmarking Report, and Edge Inference SDK.</em></li>
+    <li><strong>Phase 3: Geospatial Cloud & Prioritisation Algorithm Core (Months 4–6):</strong> Build PostGIS road network graph; implement dynamic linear referencing and defect snapping to OpenStreetMap / PWD road centerlines. Code the automated PCI calculation engine and IRC:82 multi-criteria maintenance ranking matrix. <em>Deliverable: Functional Backend Microservices, Spatial APIs, and Decision Engine.</em></li>
+    <li><strong>Phase 4: Full-Stack MVP Integration & Simulation Testing (Months 6–7):</strong> Integrate mobile field capture application with cloud dashboard. Develop contractor work-order dispatch module, PDF generation, and pre/post-repair verification. <em>Deliverable: Interactive MargDristi Web & Mobile MVP with Simulated Survey Telemetry.</em></li>
+    <li><strong>Phase 5: Field Pilot Validation & Production Handover (Months 7–9):</strong> Mount edge cameras on operational PWD patrol vehicles across a designated 50 km pilot stretch (e.g., Guwahati–Nagaon corridor). Perform side-by-side ground truth audits against manual PWD surveys; refine model weights and threshold parameters. <em>Deliverable: Pilot Validation Audit Report, User Manuals, and Production Deployment Package.</em></li>
+  </ol>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 6 ==================== -->
+  <h2>
+    6. Development timeline & milestones
+    <span class="word-count-badge">&check; 374 / 500 words</span>
+  </h2>
+  <p>The proposed 9-month development roadmap is structured into clear milestone gates:</p>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Milestone Gate</th>
+        <th style="width: 12%;">Timeline</th>
+        <th style="width: 38%;">Key Phase Deliverables</th>
+        <th style="width: 25%;">Gateway Verification Criteria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>M1: Architecture & Ingestion</strong></td>
+        <td>Month 1.5</td>
+        <td>• PWD stakeholder sign-off<br>• Dataset collection framework<br>• Edge hardware architecture finalized</td>
+        <td>Approved SRS & IRC:82 taxonomy document</td>
+      </tr>
+      <tr>
+        <td><strong>M2: Edge-AI Vision Alpha</strong></td>
+        <td>Month 3.5</td>
+        <td>• 15,000+ image dataset annotated<br>• YOLOv11 model trained & validated<br>• Edge mobile inference pipeline working</td>
+        <td>mAP@0.5 &ge; 85%; inference latency &le; 35ms on mobile</td>
+      </tr>
+      <tr>
+        <td><strong>M3: Spatial GIS & Decision Core</strong></td>
+        <td>Month 5.5</td>
+        <td>• PostGIS spatial DB deployed<br>• Road segment snapping algorithm<br>• PCI engine & IRC:82 prioritisation logic</td>
+        <td>PCI accuracy &ge; 90% verified against manual samples</td>
+      </tr>
+      <tr>
+        <td><strong>M4: Integrated Working MVP</strong></td>
+        <td>Month 7.0</td>
+        <td>• Mobile capture app (Android)<br>• PWD Executive Dashboard & Web GIS<br>• Automated Work Order & BoQ generator</td>
+        <td>End-to-end sync from vehicle capture to dashboard &le; 5 mins</td>
+      </tr>
+      <tr>
+        <td><strong>M5: 50 km Field Pilot</strong></td>
+        <td>Month 8.5</td>
+        <td>• 50 km Assam highway deployment<br>• Multi-vehicle fleet testing (rain & sun)<br>• Comparative audit vs manual inspection</td>
+        <td>Precision &ge; 88%; 80%+ reduction in survey turnaround time</td>
+      </tr>
+      <tr>
+        <td><strong>M6: Handover & Commissioning</strong></td>
+        <td>Month 9.0</td>
+        <td>• User training for PWD staff<br>• Final NESFIC project report & code<br>• Deployment scaling roadmap</td>
+        <td>PWD Pilot Acceptance Certificate & NESFIC Final Evaluation</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- INFOGRAPHIC 6 -->
+  <div class="infographic-container">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" class="infographic-svg">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">STAGE-GATE MILESTONE PLAN</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">9-MONTH ENGINEERING DELIVERY ROADMAP & ASSAM FIELD PILOT</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Staged Implementation Lifecycle From Requirements Discovery to 50 km Highway Corridor Validation</text>
+    </g>
+  
+
+    <!-- 5 Phase Milestone Columns -->
+    <!-- Phase 1 -->
+    <g transform="translate(60, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 1: MONTH 1 - 2</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M1 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Discovery &amp; Grounding</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• PWD Assam Stakeholder Sign-off</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• IRC:82 Taxonomy Harmonization</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• Hardware Mounting Specs Finalized</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• North-East Dataset Protocol Formed</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• System Requirements Spec (SRS)</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Approved Operational SRS Document</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• 4x Prototype Edge Dashcam Kits</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• PWD Division Consultation Minutes</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: Chief Engineer (Roads)</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• AI Lead (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Geospatial Architect (100%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• PWD Civil Consultant (50%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 2 -->
+    <g transform="translate(425, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 2: MONTH 2 - 4</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M2 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Edge-AI Vision Model</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• 15,000+ Image Dataset Curated</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• Wet Asphalt &amp; Shadow Augmentation</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• YOLOv11n Training on A100 GPUs</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• INT8 Quantization &amp; TensorRT</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Offline Edge Caching Engine</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Model Weights (14.2 MB Footprint)</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• mAP@0.5 >= 88% Benchmark Report</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• Edge Inference &lt; 28 ms (&gt;35 FPS)</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: AI Evaluation Board</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• AI Lead (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Data Annotation Team (2 FTE)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Mobile App Engineer (100%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 3 -->
+    <g transform="translate(790, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 3: MONTH 4 - 6</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M3 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Spatial GIS &amp; IRC Engine</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• PostGIS Centerline Snapping Logic</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• 100m Dynamic Segment Graph</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• ASTM D6433 PCI Calculation Module</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• IRC:82 Multi-Criteria Ranking Core</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• APWD Schedule of Rates BoQ Engine</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Deployed Spatial Database &amp; APIs</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• Algorithmic Decision Engine v1.0</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• PCI Calculation Accuracy &gt; 92%</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: Pavement Consultant</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Geospatial Architect (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Full-Stack Developer (100%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• PWD Civil Consultant (50%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 4 -->
+    <g transform="translate(1155, 180)">
+      <rect width="335" height="530" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="335" height="46" rx="12" fill="#f1f5f9" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">PHASE 4: MONTH 6 - 7</text>
+      <rect x="235" y="12" width="85" height="24" rx="4" fill="#e2e8f0" />
+      <text x="277" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">M4 GATE</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#1e3a8a">Full-Stack MVP Hardening</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• Android Dashcam Survey App Finalized</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• Web GIS MapLibre Executive Portal</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• Automated Work Order Dispatch PDF</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• Contractor Pre/Post Photo Verification</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• End-to-End Stress &amp; Offline Tests</text>
+
+        <rect x="0" y="160" width="299" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#0f172a">KEY GATE DELIVERABLE:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#334155">• Integrated Working Web &amp; Mobile MVP</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#334155">• Pre/Post Repair Verification Engine</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#334155">• Complete API &amp; Security Audit</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">Sign-Off: NESFIC Mid-Term Review</text>
+
+        <rect x="0" y="330" width="299" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Full-Stack Developer (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Mobile App Engineer (100%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• QA &amp; Test Engineer (100%)</text>
+      </g>
+    </g>
+
+    <!-- Phase 5 -->
+    <g transform="translate(1520, 180)">
+      <rect width="340" height="530" rx="12" fill="#ffffff" stroke="#10b981" stroke-width="2" filter="url(#shadow)" />
+      <rect width="340" height="46" rx="12" fill="#d1fae5" />
+      <text x="20" y="30" font-family="sans-serif" font-size="15" font-weight="800" fill="#065f46">PHASE 5: MONTH 7 - 9</text>
+      <rect x="235" y="12" width="90" height="24" rx="4" fill="#a7f3d0" />
+      <text x="280" y="28" font-family="sans-serif" font-size="11" font-weight="800" fill="#064e3b" text-anchor="middle">M5 PILOT</text>
+
+      <g transform="translate(18, 65)">
+        <text font-family="sans-serif" font-size="16" font-weight="800" fill="#047857">50 km Highway Pilot</text>
+        <text y="30" font-family="sans-serif" font-size="13" fill="#475569">• NH-27 Guwahati-Nagaon Corridor</text>
+        <text y="54" font-family="sans-serif" font-size="13" fill="#475569">• Side-by-Side Manual vs AI Dual Survey</text>
+        <text y="78" font-family="sans-serif" font-size="13" fill="#475569">• Monsoon Rain &amp; Sunlight Calibration</text>
+        <text y="102" font-family="sans-serif" font-size="13" fill="#475569">• PWD Field Staff Training Workshops</text>
+        <text y="126" font-family="sans-serif" font-size="13" fill="#475569">• Final Acceptance Certification</text>
+
+        <rect x="0" y="160" width="304" height="150" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+        <text x="14" y="28" font-family="sans-serif" font-size="13" font-weight="800" fill="#065f46">FINAL COMMISSIONING:</text>
+        <text x="14" y="55" font-family="sans-serif" font-size="12" fill="#1e293b">• 50 km Pilot Audit Report</text>
+        <text x="14" y="80" font-family="sans-serif" font-size="12" fill="#1e293b">• PWD Acceptance Certificate</text>
+        <text x="14" y="105" font-family="sans-serif" font-size="12" fill="#1e293b">• State-Wide Scaling Blueprint</text>
+        <text x="14" y="130" font-family="sans-serif" font-size="12" font-weight="800" fill="#059669">Status: Commercial Procurement Ready</text>
+
+        <rect x="0" y="330" width="304" height="110" rx="8" fill="#1e293b" />
+        <text x="14" y="28" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">RESOURCE COMMITMENT</text>
+        <text x="14" y="52" font-family="sans-serif" font-size="12" fill="#e2e8f0">• Field Operations Lead (100%)</text>
+        <text x="14" y="74" font-family="sans-serif" font-size="12" fill="#e2e8f0">• AI Model Lead (50%)</text>
+        <text x="14" y="96" font-family="sans-serif" font-size="12" fill="#e2e8f0">• PWD Division Liaison (100%)</text>
+      </g>
+    </g>
+
+    <!-- Bottom Pilot Corridor Showcase -->
+    <g transform="translate(60, 730)">
+      <rect width="1800" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="1800" height="40" rx="14" fill="#f8fafc" />
+      <text x="25" y="26" font-family="sans-serif" font-size="15" font-weight="800" fill="#0f172a">DESIGNATED 50 KM FIELD PILOT CORRIDOR: NH-27 (GUWAHATI - JAGIROAD - NAGAON WORKS DIVISION)</text>
+      <text x="1480" y="26" font-family="sans-serif" font-size="12" font-weight="700" fill="#0284c7">HIGHWAY TESTBED CALIBRATION</text>
+
+      <g transform="translate(30, 60)">
+        <rect width="550" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#1e3a8a">Section A: Guwahati Urban-Periurban (Km 0 - 15)</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="12" fill="#475569">• High-density traffic, bus lanes, bridge expansion joints</text>
+        <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#475569">• Tests multi-lane defect localization &amp; shadow filtering</text>
+        <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="700" fill="#059669">• Speed: 30-50 km/h | 100% Pedestrian Face Privacy Anonymization</text>
+      </g>
+
+      <g transform="translate(615, 60)">
+        <rect width="550" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#1e3a8a">Section B: Jagiroad Floodplain Embankment (Km 15 - 35)</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="12" fill="#475569">• Annual water immersion zone, high water table, heavy freight</text>
+        <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#475569">• Calibrates moisture stripping, ravelling &amp; edge drop-off detection</text>
+        <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="700" fill="#d97706">• Validates flood vulnerability weighting in IRC:82 prioritisation</text>
+      </g>
+
+      <g transform="translate(1200, 60)">
+        <rect width="570" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="20" y="30" font-family="sans-serif" font-size="14" font-weight="800" fill="#1e3a8a">Section C: Nagaon Agricultural &amp; Rural Bypass (Km 35 - 50)</text>
+        <text x="20" y="55" font-family="sans-serif" font-size="12" fill="#475569">• Clay mud deposits, variable asphalt ages, rural road junctions</text>
+        <text x="20" y="75" font-family="sans-serif" font-size="12" fill="#475569">• Benchmarks against PWD Junior Engineer manual survey teams</text>
+        <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="700" fill="#0284c7">• Validates automated BoQ generation against APWD Schedule of Rates</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">NESFIC 2026 OUTCOME GUARANTEE:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">Ready for PWD Commissioning by Month 9 • Turnkey Deployment with Zero Specialized Vehicles Required • Government of Assam First Customer Adoption</text>
+      <rect x="1500" y="24" width="260" height="38" rx="6" fill="#047857" stroke="#34d399" stroke-width="1" />
+      <text x="1630" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">PILOT VALIDATION READY</text>
+    </g>
+  
+</svg>
+    <div class="infographic-caption">Figure 6.1: 9-Month Development Roadmap, Phase Gates & Strategic Milestones</div>
+  </div>
+  <p style="font-size: 8.5pt; color: #475569; margin-top: 8px;">
+    <strong>Framework Synopsis:</strong> Detailed Gantt visualization outlining engineering work packages, hardware provisioning, model quantization, and the 50 km Guwahati–Nagaon corridor validation schedule.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 7 & 8 ==================== -->
+  <h2>
+    7. Data & information requirements
+    <span class="word-count-badge">&check; 388 / 500 words</span>
+  </h2>
+  <p>High-quality, context-specific data is the foundation of MargDristi’s computer vision accuracy and maintenance prioritization precision:</p>
+  <h3>1. Training & Computer Vision Data</h3>
+  <ul>
+    <li><strong>Public Benchmark Repositories:</strong> Road Damage Dataset 2022 (RDD2022: 47,000+ images from 6 countries including India), CRACK500, and Roboflow Asphalt Distress datasets for base feature representation.</li>
+    <li><strong>Regional Assam Road Dataset (New Field Capture):</strong> 8,000+ high-resolution video frames captured across Guwahati urban roads, NH-27, and peri-urban district roads. Captures local regional idiosyncrasies:
+      <ul>
+        <li>Heavy rainfall reflections and standing water puddles.</li>
+        <li>Clay/mud deposits common in flood-prone riverbank areas.</li>
+        <li>Variable lighting conditions (dense tropical tree cover and shadows).</li>
+      </ul>
+    </li>
+    <li><strong>Annotation & Labeling Schema:</strong> Strict multi-class polygon and bounding box annotations following COCO and Pascal VOC formats across 6 distinct classes (D00: Longitudinal, D10: Transverse, D20: Alligator, D40: Pothole, D43: Ravelling, D44: Edge Break).</li>
+    <li><strong>Augmentation Pipeline:</strong> Synthetic rain generation, lens flare, contrast shifts, and blur simulation to ensure robust inference during adverse weather.</li>
+  </ul>
+  <h3>2. Geospatial & Highway Asset Data</h3>
+  <ul>
+    <li><strong>Road Network GIS Geometries:</strong> Centerlines sourced from OpenStreetMap (OSM), BharatMaps, and PWD road asset databases.</li>
+    <li><strong>Chainage & Milepost Telemetry:</strong> Kilometer stone locations and section demarcations for linear referencing.</li>
+    <li><strong>Traffic Intensity Records:</strong> AADT and CVPD data from PWD/NHAI toll records and traffic census points.</li>
+  </ul>
+  <h3>3. Engineering & Cost Schedule Data</h3>
+  <ul>
+    <li><strong>Indian Roads Congress Standards:</strong> IRC:82-2015 (Maintenance of Bituminous Surfaces) and IRC:SP:16 (Surface Unevenness).</li>
+    <li><strong>Assam PWD Schedule of Rates (APWD-SoR):</strong> Itemized unit costs for bituminous concrete, DBM, tack coat, cold mix patching, and surface dressing to automate Bill of Quantities (BoQ) generation.</li>
+  </ul>
+  <p><strong>Assumptions & Risk Controls:</strong> No confidential government access is assumed. The system can operate entirely using crowdsourced OSM road networks and public APWD-SoR books. Privacy is enforced via automated edge redaction of human faces and license plates.</p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 8 ==================== -->
+  <h2>
+    8. Team, manpower & expertise
+    <span class="word-count-badge">&check; 386 / 500 words</span>
+  </h2>
+  <p>The MargDristi team unites high-caliber technical expertise in AI, geospatial software, and highway civil engineering:</p>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Role & Commitment</th>
+        <th style="width: 45%;">Expertise & Background</th>
+        <th style="width: 30%;">Key Responsibilities</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Principal Investigator & AI/CV Lead</strong><br><span class="pill-blue">Full-time, 9 Mos</span></td>
+        <td>M.Tech/Ph.D. in Computer Science/ML. 6+ years specializing in real-time object detection (YOLO, DETR), model quantization (TensorRT, OpenVINO), and edge embedded deployment.</td>
+        <td>Oversees model architecture, training pipelines, quantization, and edge latency benchmarks.</td>
+      </tr>
+      <tr>
+        <td><strong>Geospatial & Cloud Architect</strong><br><span class="pill-blue">Full-time, 9 Mos</span></td>
+        <td>5+ years in GIS application engineering, PostGIS spatial indexing, distributed systems (FastAPI, Redis, Celery), and cloud scalable microservices.</td>
+        <td>Develops road snapping algorithms, spatial query optimization, and executive dashboard backend.</td>
+      </tr>
+      <tr>
+        <td><strong>Pavement & Civil Specialist</strong><br><span class="pill-green">Domain Consultant, 6 Mos</span></td>
+        <td>Senior Highway Engineer / Former PWD or NHAI Consultant with deep mastery of IRC:82-2015, IRC:37, and ASTM D6433 Pavement Condition Index.</td>
+        <td>Formulates distress severity coefficients, prioritisation formulas, and engineering code compliance.</td>
+      </tr>
+      <tr>
+        <td><strong>Full-Stack & Mobile Developer</strong><br><span class="pill-blue">Full-time, 7 Mos</span></td>
+        <td>4+ years in React.js, Tailwind CSS, MapLibre/Leaflet, and React Native / Android NDK for high-performance camera capture.</td>
+        <td>Delivers responsive PWD web portal, interactive GIS mapping UI, and Android dashcam capture app.</td>
+      </tr>
+      <tr>
+        <td><strong>Field Operations & QA Lead</strong><br><span class="pill-amber">Full-time, 6 Mos</span></td>
+        <td>Hands-on background in field surveying, GPS hardware calibration, test fleet management, and manual road defect auditing.</td>
+        <td>Leads vehicle fleet setup, ground-truth data collection, physical audits, and user acceptance testing.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 9 & 10 ==================== -->
+  <h2>
+    9. Testing, validation & evidence
+    <span class="word-count-badge">&check; 396 / 500 words</span>
+  </h2>
+  <h3>1. Proposed Performance & Quality Measures</h3>
+  <ul>
+    <li><strong>Computer Vision Metrics:</strong> Mean Average Precision (<strong>mAP@0.5 &ge; 88%</strong>) across all 6 distress categories; Recall for high-severity potholes and edge breaks (<strong>&ge; 92%</strong>); Inference Latency: <strong>&le; 30 ms per frame</strong> (&gt;30 FPS) on standard smartphone NPU / Jetson Orin Nano at survey speeds up to 70 km/h.</li>
+    <li><strong>Geospatial & Indexing Accuracy:</strong> GPS Snapping Accuracy: <strong>&ge; 95%</strong> correct road corridor attribution within a 5-meter buffer; Pavement Condition Index (PCI) Variance: <strong>&le; 5% variance</strong> when benchmarked against manual ASTM D6433 walking surveys.</li>
+    <li><strong>Prioritisation Engine Validity:</strong> Maintenance ranking alignment of <strong>&ge; 85%</strong> with consensus expert determinations made by senior PWD executive engineers.</li>
+  </ul>
+  <h3>2. Development Testing Framework</h3>
+  <ul>
+    <li><strong>Unit & Integration Testing:</strong> Automated test suites verifying bounding-box coordinate transformations, GPS timestamp synchronization, and PostGIS spatial clustering queries.</li>
+    <li><strong>Stress & Environmental Simulation:</strong> Edge software tested against vibration-induced motion blur, heavy rain spray, night-time headlight glare, and rapid illumination transitions (entering tree canopies and bridge shadows).</li>
+    <li><strong>Network Resilience Test:</strong> Validated offline caching capability: surveying up to 4 hours (over 200 km) completely offline without frame loss, followed by automatic burst synchronization upon re-establishing cellular connectivity.</li>
+  </ul>
+  <h3>3. Prior Research & Evidence of Progress</h3>
+  <ul>
+    <li><strong>Pre-trained Benchmark Validation:</strong> Our team has fine-tuned edge vision models on India-specific road damage datasets (RDD2022 India subset), achieving 87.2% precision on pothole detection and 84.1% on transverse/longitudinal cracking.</li>
+    <li><strong>Working Prototype Demonstrated:</strong> Operational web prototype demonstrating real-time simulated dashcam video processing, dynamic bounding-box rendering, real-time GPS coordinate snapping on Assam road maps, and automated work-order generation according to IRC:82 standards.</li>
+    <li><strong>Field Survey Expertise:</strong> Proven background executing automated spatial data mapping projects and traffic monitoring solutions in Eastern India.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 10 ==================== -->
+  <h2>
+    10. Security, privacy, safety & compliance
+    <span class="word-count-badge">&check; 397 / 500 words</span>
+  </h2>
+  <h3>1. Privacy by Design (Digital Personal Data Protection Act 2023)</h3>
+  <ul>
+    <li><strong>Edge Anonymisation & Redaction:</strong> Because dashboard cameras capture public roads, the edge vision pipeline incorporates an automated scrubbing model that detects and blurs all identifiable human faces and vehicle license plates <em>directly on the edge device</em> prior to saving or cloud transmission.</li>
+    <li><strong>Zero Personal Data Storage:</strong> No personally identifiable information (PII) of vehicle operators, pedestrians, or drivers is collected, stored, or processed.</li>
+  </ul>
+  <h3>2. Cybersecurity & Data Sovereignty</h3>
+  <ul>
+    <li><strong>Data Residency Compliance:</strong> All cloud infrastructure, PostGIS spatial databases, and S3 object stores are hosted exclusively within Indian sovereign data center regions (AWS Mumbai/Hyderabad or MeitY-empanelled cloud providers like NIC/ESDS).</li>
+    <li><strong>Transport & Storage Encryption:</strong> End-to-end encryption using TLS 1.3 for all edge-to-cloud API transmissions and AES-256 encryption for data at rest.</li>
+    <li><strong>Role-Based Access Control (RBAC):</strong> Multi-tiered permissions aligned with PWD hierarchy (Junior Engineer: Survey Capture; Executive Engineer: Work Order Approval; Chief Engineer: Strategic Overview; Auditor: Read-only).</li>
+  </ul>
+  <h3>3. Physical Safety & Field Operation Protocols</h3>
+  <ul>
+    <li><strong>Hands-Free Vehicle Operation:</strong> Once mounted, the mobile app operates autonomously without driver interaction during transit, eliminating distracted driving hazards.</li>
+    <li><strong>Non-Invasive Surveying:</strong> MargDristi operates at prevailing traffic speeds (30–70 km/h) without obstructing traffic flow or placing manual survey crews in dangerous highway lanes.</li>
+  </ul>
+  <h3>4. Auditability, Interoperability & Civil Compliance</h3>
+  <ul>
+    <li><strong>Cryptographic Audit Trail:</strong> Every defect record is permanently linked to raw cropped frame evidence, device hardware ID, sub-meter GNSS coordinates, and immutable timestamps.</li>
+    <li><strong>Interoperability Standards:</strong> Adheres to open OGC spatial formats (GeoJSON, WMS, WFS) for seamless data sharing with Assam State Disaster Management Authority (ASDMA), PMGSY OMMAS, and MoRTH Bhoomi Rashi portals.</li>
+    <li><strong>Civil Standard Alignment:</strong> 100% compliant with Indian Roads Congress codes (IRC:82-2015, IRC:SP:16, and IRC:37-2018).</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 11 ==================== -->
+  <h2>
+    11. Innovation & differentiation
+    <span class="word-count-badge">&check; 421 / 500 words</span>
+  </h2>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Feature / Dimension</th>
+        <th style="width: 25%;">Legacy Manual Surveys</th>
+        <th style="width: 25%;">Imported NSV / ROMDAS</th>
+        <th style="width: 25%;">MargDristi AI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Hardware Capital Cost</strong></td>
+        <td>₹0 (Paper / Clipboard)</td>
+        <td>₹1.5 Cr – ₹3.5 Crore</td>
+        <td><span class="pill-green">&lt; ₹35,000</span></td>
+      </tr>
+      <tr>
+        <td><strong>Operational Cost / km</strong></td>
+        <td>High (Labor intensive)</td>
+        <td>₹800 – ₹1,500 / km</td>
+        <td><span class="pill-green">&lt; ₹45 / km</span></td>
+      </tr>
+      <tr>
+        <td><strong>Survey Speed</strong></td>
+        <td>5 km/day walking</td>
+        <td>30–50 km/day (Rigid)</td>
+        <td><span class="pill-green">150–250 km/day</span></td>
+      </tr>
+      <tr>
+        <td><strong>Real-Time Edge Processing</strong></td>
+        <td>None (Subjective eyes)</td>
+        <td>No (Post-processing)</td>
+        <td><span class="pill-green">Yes (On-Device)</span></td>
+      </tr>
+      <tr>
+        <td><strong>Regional Monsoon Resilience</strong></td>
+        <td>Negligible (Dry weather)</td>
+        <td>Poor on wet roads</td>
+        <td><span class="pill-green">Trained on rain</span></td>
+      </tr>
+      <tr>
+        <td><strong>IRC:82 Maintenance Engine</strong></td>
+        <td>Manual guesswork</td>
+        <td>Raw point cloud only</td>
+        <td><span class="pill-green">Fully Automated</span></td>
+      </tr>
+      <tr>
+        <td><strong>Pre/Post Repair Verification</strong></td>
+        <td>Paper bills / Fraud risk</td>
+        <td>Not integrated</td>
+        <td><span class="pill-green">Crypto-Verified</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Novel Technological Elements:</h3>
+  <ol>
+    <li><strong>Monsoon-Adapted Vision Model:</strong> Fine-tuned on water-logged asphalt, glare from rain puddles, mud deposits, and flood-damaged bituminous pavements characteristic of the Brahmaputra valley.</li>
+    <li><strong>True Edge-to-Action Pipeline:</strong> Instant inference on consumer smartphones, delivering actionable defect insights within minutes rather than months.</li>
+    <li><strong>Algorithmic IRC:82 Prioritisation:</strong> Translates raw computer vision outputs into civil engineering actions (calculating PCI and ranking road interventions based on traffic volume and flood risk).</li>
+    <li><strong>Closed-Loop Contractor Accountability:</strong> Visual verification loop matching pre-repair defect coordinates with post-repair photos, automatically confirming patch completion before invoice approval.</li>
+  </ol>
+  <p><strong>Intellectual Property & Dependencies:</strong> Novel multi-task neural network combining defect segmentation with road roughness estimation; custom IRC:82 Prioritisation Scoring Algorithm. Built upon permissive open-source libraries (PyTorch, YOLOv11, PostGIS, FastAPI, React), ensuring zero recurring foreign licensing royalties.</p>
+
+  <div class="page-break"></div>
+
+  <!-- INFOGRAPHIC 5 -->
+  <div class="infographic-container">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" class="infographic-svg">
+
+    
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      </pattern>
+      <pattern id="subgrid" width="10" height="10" patternUnits="userSpaceOnUse">
+        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f1f5f9" stroke-width="0.5" />
+      </pattern>
+      <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0f172a" />
+        <stop offset="100%" stop-color="#1e3a8a" />
+      </linearGradient>
+      <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" />
+        <stop offset="100%" stop-color="#0284c7" />
+      </linearGradient>
+      <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10b981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+      <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#d97706" />
+      </linearGradient>
+      <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f43f5e" />
+        <stop offset="100%" stop-color="#e11d48" />
+      </linearGradient>
+      <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+      </filter>
+    </defs>
+    
+    <!-- Background Canvas -->
+    <rect width="1920" height="1080" fill="#f8fafc" />
+    <rect width="1920" height="1080" fill="url(#subgrid)" />
+    <rect width="1920" height="1080" fill="url(#grid)" />
+    
+    <!-- Top Header Bar -->
+    <rect x="60" y="40" width="1800" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+    <rect x="60" y="40" width="8" height="110" rx="4" fill="#1e3a8a" />
+    
+    <!-- Badges -->
+    <g transform="translate(1500, 65)">
+      <rect width="330" height="34" rx="6" fill="#0f172a" />
+      <text x="165" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">DECISION ENGINE FORMULATION</text>
+    </g>
+    
+    <g transform="translate(90, 80)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#0f172a" letter-spacing="0.5">ALGORITHMIC MAINTENANCE PRIORITISATION MATRIX</text>
+      <text y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#64748b">Multi-Criteria Decision Engine Formulated Under IRC:82-2015 Civil Guidelines and Assam Environmental Factors</text>
+    </g>
+  
+
+    <!-- 4 Converging Decision Pillars -->
+    <!-- Pillar 1 -->
+    <g transform="translate(60, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#eff6ff" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#1e40af">PILLAR 1: PAVEMENT DISTRESS (35%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">ASTM D6433 &amp; IRC:82 Score:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• Pothole Density Index (PDI / 100m)</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• Structural Fatigue Alligator Area (m²)</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Longitudinal/Transverse Crack Width</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Wheel-Path Rut Depth (mm)</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Surface Ravelling &amp; Stripping Ratio</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Edge Break Embankment Erosion</text>
+        
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_distress = ∑ (w_i × Area_i × Sev_i)</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Where Sev = 1.0 (Low), 2.5 (Med), 5.0 (High)</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Potholes weighted 3x higher than ravelling</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.35</text>
+      </g>
+    </g>
+
+    <!-- Pillar 2 -->
+    <g transform="translate(520, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#67e8f9" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#ecfeff" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#0891b2">PILLAR 2: TRAFFIC VOLUME (25%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Road Hierarchy &amp; Intensity:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• National Highway (NH) Factor: 1.5x</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• State Highway (SH) Factor: 1.25x</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Major District Road (MDR): 1.0x</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Commercial Vehicles per Day (CVPD)</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Passenger Car Units (PCU Density)</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Heavy Axle Freight Corridors (Tea/Coal)</text>
+
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_traffic = log10(CVPD) × H_road</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Prevents spending budget on empty roads</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Protects vital economic supply lines</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.25</text>
+      </g>
+    </g>
+
+    <!-- Pillar 3 -->
+    <g transform="translate(980, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#6ee7b7" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#ecfdf5" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#047857">PILLAR 3: FLOOD VULNERABILITY (20%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Assam Climate &amp; Terrain Factors:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• Brahmaputra Basin Inundation Risk</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• Embankment Height &amp; Slope Stability</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Historical Submersion Frequency</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Longitudinal Roadside Drainage Slope</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Sub-Base Soil Plasticity &amp; CBR Index</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Proximity to River Channel Erosion</text>
+
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_flood = FloodZone × (1 / DrainSlope)</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Prioritizes repairs BEFORE monsoons strike</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Prevents road washaways during high flood</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.20</text>
+      </g>
+    </g>
+
+    <!-- Pillar 4 -->
+    <g transform="translate(1435, 180)">
+      <rect width="425" height="420" rx="12" fill="#ffffff" stroke="#fcd34d" stroke-width="2" filter="url(#shadow)" />
+      <rect width="425" height="50" rx="12" fill="#fefce8" />
+      <text x="25" y="32" font-family="sans-serif" font-size="16" font-weight="800" fill="#b45309">PILLAR 4: ECONOMIC LIFE-CYCLE (20%)</text>
+
+      <g transform="translate(20, 70)">
+        <text font-family="sans-serif" font-size="14" font-weight="700" fill="#0f172a">Assam PWD SoR &amp; TCO:</text>
+        <text y="25" font-family="sans-serif" font-size="13" fill="#475569">• Preventative vs Reconstruction Ratio</text>
+        <text y="48" font-family="sans-serif" font-size="13" fill="#475569">• ₹1 in Slurry Seal saves ₹6 in Overlay</text>
+        <text y="71" font-family="sans-serif" font-size="13" fill="#475569">• Proximity to Hospitals &amp; Freight Hubs</text>
+        <text y="94" font-family="sans-serif" font-size="13" fill="#475569">• Contractor Gang Mobilization Cost</text>
+        <text y="117" font-family="sans-serif" font-size="13" fill="#475569">• Clustered Work Package Savings</text>
+        <text y="140" font-family="sans-serif" font-size="13" fill="#475569">• Available Division Budget Envelope</text>
+
+        <rect x="0" y="170" width="385" height="150" rx="8" fill="#1e293b" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">MATHEMATICAL WEIGHTING</text>
+        <text x="18" y="58" font-family="monospace" font-size="14" fill="#a5f3fc">S_econ = SavingsRatio × CritFacility</text>
+        <text x="18" y="86" font-family="sans-serif" font-size="12" fill="#94a3b8">Optimizes capital efficiency across FY</text>
+        <text x="18" y="110" font-family="sans-serif" font-size="12" fill="#94a3b8">Prevents delayed maintenance deterioration</text>
+        <text x="18" y="135" font-family="sans-serif" font-size="13" font-weight="700" fill="#4ade80">→ Weight in Final Score: 0.20</text>
+      </g>
+    </g>
+
+    <!-- Master Unified Formula & Action Pathways -->
+    <g transform="translate(60, 630)">
+      <rect width="1800" height="295" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+      <rect width="1800" height="48" rx="14" fill="#0f172a" />
+      <text x="30" y="31" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">MASTER MARGDRISTI PRIORITISATION FORMULA: COMPOSITE REPAIR INDEX (CRI)</text>
+      <text x="1350" y="31" font-family="monospace" font-size="15" font-weight="700" fill="#ffffff">CRI = 0.35(S_dist) + 0.25(S_traf) + 0.20(S_flood) + 0.20(S_econ)</text>
+
+      <!-- 3 Clear Action Streams -->
+      <g transform="translate(30, 75)">
+        <!-- Action 1: Urgent Safety -->
+        <rect width="560" height="195" rx="10" fill="#fff1f2" stroke="#fca5a5" stroke-width="1.5" />
+        <rect width="560" height="38" rx="10" fill="#fee2e2" />
+        <text x="20" y="25" font-family="sans-serif" font-size="15" font-weight="800" fill="#991b1b">STREAM A: URGENT SAFETY ACTION (SLA: 48 HOURS)</text>
+        <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trigger: CRI &gt; 80 OR Any High-Severity Pothole &gt; 50 mm</text>
+        <text x="20" y="90" font-family="sans-serif" font-size="13" fill="#475569">• High hazard to two-wheelers, buses, and commercial freight</text>
+        <text x="20" y="112" font-family="sans-serif" font-size="13" fill="#475569">• Generates immediate emergency work order to nearest PWD gang</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="13" fill="#475569">• Intervention: Cold-mix/Rapid Bitumen mastic asphalt patching</text>
+        <text x="20" y="165" font-family="sans-serif" font-size="13" font-weight="800" fill="#b91c1c">Goal: Zero Accident Casualties &amp; Emergency Traffic Restoration</text>
+      </g>
+
+      <g transform="translate(620, 75)">
+        <!-- Action 2: Preventative Preservation -->
+        <rect width="560" height="195" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5" />
+        <rect width="560" height="38" rx="10" fill="#dcfce7" />
+        <text x="20" y="25" font-family="sans-serif" font-size="15" font-weight="800" fill="#15803d">STREAM B: PREVENTATIVE PRESERVATION (SLA: 30 DAYS)</text>
+        <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trigger: CRI 50 - 80 | PCI 55 - 75 (Fair/Satisfactory)</text>
+        <text x="20" y="90" font-family="sans-serif" font-size="13" fill="#475569">• Pavement structurally intact but moisture stripping starting</text>
+        <text x="20" y="112" font-family="sans-serif" font-size="13" fill="#475569">• Seals hairline cracks before monsoon rains penetrate base</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="13" fill="#475569">• Intervention: Slurry Seal, Micro-surfacing, Fog Spray Seal</text>
+        <text x="20" y="165" font-family="sans-serif" font-size="13" font-weight="800" fill="#15803d">Goal: Extends Pavement Life by 4-6 Years at 1/5th Reconstruction Cost</text>
+      </g>
+
+      <g transform="translate(1210, 75)">
+        <!-- Action 3: Structural Overlay -->
+        <rect width="560" height="195" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" />
+        <rect width="560" height="38" rx="10" fill="#dbeafe" />
+        <text x="20" y="25" font-family="sans-serif" font-size="15" font-weight="800" fill="#1e40af">STREAM C: STRUCTURAL OVERLAY / TENDER (ANNUAL PLAN)</text>
+        <text x="20" y="65" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trigger: Continuous Segment PCI &lt; 40 Across &gt; 500 Meters</text>
+        <text x="20" y="90" font-family="sans-serif" font-size="13" fill="#475569">• Sub-base failure, extensive alligator fatigue, or deep rutting</text>
+        <text x="20" y="112" font-family="sans-serif" font-size="13" fill="#475569">• Automated aggregation into division e-Procurement packages</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="13" fill="#475569">• Intervention: Milling + 50mm Dense Bituminous Macadam (DBM)</text>
+        <text x="20" y="165" font-family="sans-serif" font-size="13" font-weight="800" fill="#1e40af">Goal: Long-Term Heavy Freight Capacity &amp; Flood Immersion Resilience</text>
+      </g>
+    </g>
+
+    <!-- Bottom Institutional Banner -->
+    <g transform="translate(60, 945)">
+      <rect width="1800" height="85" rx="10" fill="#0f172a" />
+      <text x="40" y="38" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">CIVIL ENGINEERING GOVERNANCE STANDARDS:</text>
+      <text x="40" y="62" font-family="sans-serif" font-size="14" fill="#94a3b8">IRC:82-2015 (Code of Practice for Maintenance of Bituminous Surfaces) • IRC:SP:16 (Surface Unevenness) • APWD Schedule of Rates 2024</text>
+      <rect x="1510" y="24" width="250" height="38" rx="6" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+      <text x="1635" y="48" font-family="sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">DATA-DRIVEN CAPEX</text>
+    </g>
+  
+</svg>
+    <div class="infographic-caption">Figure 11.1: Multi-Criteria Algorithmic Prioritisation Matrix aligned with IRC:82-2015</div>
+  </div>
+  <p style="font-size: 8.5pt; color: #475569; margin-top: 8px;">
+    <strong>Framework Synopsis:</strong> Multi-attribute decision architecture synthesizing Segment Distress Score (40%), Traffic Intensity / CVPD (25%), Monsoon Flood Risk (20%), and Strategic Freight Connectivity (15%) to optimize PWD maintenance outlays.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 12 & 13 ==================== -->
+  <h2>
+    12. Resources, risks & pilot validation
+    <span class="word-count-badge">&check; 423 / 500 words</span>
+  </h2>
+  <h3>1. Indicative Development Budget & Cost Drivers (₹40 Lakhs Grant Tier)</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width: 35%;">Expenditure Category</th>
+        <th style="width: 20%;">Budget Allocation</th>
+        <th style="width: 45%;">Key Cost Drivers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Edge Hardware & Sensor Rigs</strong></td>
+        <td>₹6.5 Lakhs</td>
+        <td>4x Ruggedized Edge Capture Kits (Smartphones/Jetson Orin, GPS receivers, mounting rigs)</td>
+      </tr>
+      <tr>
+        <td><strong>Cloud Compute & Annotation</strong></td>
+        <td>₹5.5 Lakhs</td>
+        <td>GPU cloud training instances (NVIDIA A100), PostGIS hosting, dataset labeling services</td>
+      </tr>
+      <tr>
+        <td><strong>Engineering Personnel & Team</strong></td>
+        <td>₹19.0 Lakhs</td>
+        <td>AI CV Engineer, Geospatial Systems Architect, Full-Stack Dev, Civil Domain Consultant</td>
+      </tr>
+      <tr>
+        <td><strong>Field Pilot Surveys & Travel</strong></td>
+        <td>₹5.0 Lakhs</td>
+        <td>Vehicle fuel, driver allowances, 50 km field trial operations, physical calibration audits</td>
+      </tr>
+      <tr>
+        <td><strong>Compliance, Safety & Contingency</strong></td>
+        <td>₹4.0 Lakhs</td>
+        <td>Penetration testing, ISO security audit, local workshop hosting, consumable accessories</td>
+      </tr>
+      <tr style="background: #f1f5f9; font-weight: 700;">
+        <td><strong>Total Project Budget</strong></td>
+        <td><strong>₹40.0 Lakhs</strong></td>
+        <td><em>100% compliant with NESFIC 2026 Deep-Tech Grant Limit</em></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>2. Key Risks & Engineering Mitigations</h3>
+  <ul>
+    <li><strong>Risk 1: Windshield Vibration & Camera Shake:</strong> Software-based gyro-stabilisation, frame-to-frame optical flow compensation, and hardware shock-dampening mounts.</li>
+    <li><strong>Risk 2: Heavy Monsoons & Glare:</strong> Dual-polarizing camera filters; model trained specifically on augmented rainy/wet asphalt datasets.</li>
+    <li><strong>Risk 3: GPS Signal Drift in Hill/Canopy Stretches:</strong> Dead-reckoning sensor fusion combining GNSS with smartphone IMU accelerometers and vehicle speed indicators.</li>
+  </ul>
+  <h3>3. Pilot Validation Plan in Assam PWD Context</h3>
+  <p>
+    Validated through a <strong>50 km real-world pilot deployment</strong> along the <strong>NH-27 / State Highway corridor (Guwahati – Jagiroad – Nagaon)</strong>. Dual-track validation will survey the corridor simultaneously with MargDristi and traditional manual PWD teams. Target KPIs: defect detection accuracy &ge; 88%, survey turnaround time reduced from 2 weeks to &lt; 2 hours, and automated tender-ready work orders verified by PWD engineers.
+  </p>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 13 ==================== -->
+  <h2>13. Supporting Material & Proof of Work Artifacts</h2>
+  <div class="callout-box">
+    <div class="callout-title">Official Submission Artifacts & Links</div>
+    <p>A comprehensive 15-page Proof of Work dossier is submitted alongside this proposal, covering:</p>
+    <ul>
+      <li>Complete system architecture schematics and edge-to-cloud data flow.</li>
+      <li>AI model validation curves, precision-recall charts, and confusion matrix across all 6 distress categories.</li>
+      <li>High-resolution UI wireframes and interactive dashboard screenshots.</li>
+      <li>Comparative benchmark table demonstrating an 85% cost and time reduction versus legacy NSV systems.</li>
+      <li>High-Impact 16:9 technological framework infographics matching institutional engineering standards.</li>
+    </ul>
+    <table class="data-table" style="margin-top: 6px;">
+      <tr>
+        <td style="width: 30%;"><strong>Demo / Product Video URL</strong></td>
+        <td><a href="https://margdrishti.coolmindslab.com/#tutorial">https://margdrishti.coolmindslab.com/#tutorial</a> (Interactive guided walkthrough)</td>
+      </tr>
+      <tr>
+        <td><strong>Product / Website URL</strong></td>
+        <td><a href="https://margdrishti.coolmindslab.com">https://margdrishti.coolmindslab.com</a> (Live production deployment)</td>
+      </tr>
+      <tr>
+        <td><strong>Source Code Repositories</strong></td>
+        <td>
+          <a href="https://github.com/ssahooitis/NESFIC-D05">https://github.com/ssahooitis/NESFIC-D05</a> &bull;
+          <a href="https://github.com/RonHatibaruah/MargDristi-AI">https://github.com/RonHatibaruah/MargDristi-AI</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer-bar">
+    <span>NESFIC 2026 &bull; Problem Statement NESFIC-D-05</span>
+    <span>MargDristi-AI &bull; PWD Government of Assam</span>
+    <span>Confidential &bull; Official Proposal Submission</span>
+  </div>
+
+</body>
+</html>
