@@ -6,7 +6,8 @@
 **Lead Applicant:** Sambit Mohanty  
 **Copyright:** Copyright © 2026 Cool Minds Lab. All rights reserved.  
 
-🌐 **Live Demo:** [https://margdrishti.coolmindslab.com](https://margdrishti.coolmindslab.com)
+🌐 **Live Demo:** [https://margdrishti.coolmindslab.com](https://margdrishti.coolmindslab.com)  
+📂 **GitHub Repository:** [https://github.com/ssahooitis/NESFIC-D05](https://github.com/ssahooitis/NESFIC-D05)
 
 ---
 
@@ -45,8 +46,8 @@ The repository includes 6 high-impact architectural SVG infographics (`public/as
 ### Setup & Run Local Dev Server
 ```bash
 # Clone the repository
-git clone https://github.com/RonHatibaruah/MargDristi-AI.git
-cd MargDristi-AI
+git clone https://github.com/ssahooitis/NESFIC-D05.git
+cd NESFIC-D-05
 
 # Install dependencies
 npm install

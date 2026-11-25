@@ -391,6 +391,7 @@ A comprehensive 15-page Proof of Work PDF is submitted, containing:
 ### Submission Links & Resources:
 - **Demo / Product Video URL:** `https://margdrishti.coolmindslab.com/#tutorial` *(interactive guided walkthrough)*
 - **Product / Website URL:** `https://margdrishti.coolmindslab.com` *(Live production deployment)*
+- **GitHub Repository:** `https://github.com/ssahooitis/NESFIC-D05` *(Open-source codebase)*
 - **Additional Supporting Material:** Attached technical whitepaper detailing the mathematical formulation of the IRC:82 Prioritisation Index and edge TensorRT optimization metrics.
 
 ---

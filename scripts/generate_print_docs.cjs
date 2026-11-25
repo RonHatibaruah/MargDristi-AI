@@ -386,10 +386,9 @@ const proposalHtml = `<!DOCTYPE html>
         <div class="meta-value" style="font-size: 9.5pt;"><a href="https://margdrishti.coolmindslab.com" target="_blank">https://margdrishti.coolmindslab.com</a></div>
       </div>
       <div>
-        <div class="meta-label">Source Code Repositories</div>
-        <div class="meta-value" style="font-size: 8pt;">
-          <a href="https://github.com/ssahooitis/NESFIC-D05">ssahooitis/NESFIC-D05</a> &bull;
-          <a href="https://github.com/RonHatibaruah/MargDristi-AI">RonHatibaruah/MargDristi-AI</a>
+        <div class="meta-label">GitHub Repository</div>
+        <div class="meta-value" style="font-size: 8.5pt;">
+          <a href="https://github.com/ssahooitis/NESFIC-D05" target="_blank">github.com/ssahooitis/NESFIC-D05</a>
         </div>
       </div>
       <div>
@@ -969,11 +968,8 @@ const proposalHtml = `<!DOCTYPE html>
         <td><a href="https://margdrishti.coolmindslab.com">https://margdrishti.coolmindslab.com</a> (Live production deployment)</td>
       </tr>
       <tr>
-        <td><strong>Source Code Repositories</strong></td>
-        <td>
-          <a href="https://github.com/ssahooitis/NESFIC-D05">https://github.com/ssahooitis/NESFIC-D05</a> &bull;
-          <a href="https://github.com/RonHatibaruah/MargDristi-AI">https://github.com/RonHatibaruah/MargDristi-AI</a>
-        </td>
+        <td><strong>GitHub Repository</strong></td>
+        <td><a href="https://github.com/ssahooitis/NESFIC-D05" target="_blank">https://github.com/ssahooitis/NESFIC-D05</a></td>
       </tr>
     </table>
   </div>
@@ -1160,10 +1156,9 @@ const powHtml = `<!DOCTYPE html>
         <div class="meta-value" style="font-size: 9.5pt;"><a href="https://margdrishti.coolmindslab.com" target="_blank">https://margdrishti.coolmindslab.com</a></div>
       </div>
       <div>
-        <div class="meta-label">GitHub Version-Controlled Repositories</div>
-        <div class="meta-value" style="font-size: 8pt;">
-          <a href="https://github.com/ssahooitis/NESFIC-D05">ssahooitis/NESFIC-D05</a><br>
-          <a href="https://github.com/RonHatibaruah/MargDristi-AI">RonHatibaruah/MargDristi-AI</a>
+        <div class="meta-label">GitHub Repository</div>
+        <div class="meta-value" style="font-size: 8.5pt;">
+          <a href="https://github.com/ssahooitis/NESFIC-D05" target="_blank">github.com/ssahooitis/NESFIC-D05</a>
         </div>
       </div>
     </div>
@@ -1247,12 +1242,8 @@ const powHtml = `<!DOCTYPE html>
         <td><a href="https://margdrishti.coolmindslab.com/#tutorial" target="_blank">https://margdrishti.coolmindslab.com/#tutorial</a></td>
       </tr>
       <tr>
-        <td><strong>Primary Source Code Repo</strong></td>
+        <td style="width: 30%;"><strong>GitHub Repository</strong></td>
         <td><a href="https://github.com/ssahooitis/NESFIC-D05" target="_blank">https://github.com/ssahooitis/NESFIC-D05</a></td>
-      </tr>
-      <tr>
-        <td><strong>Mirror / Backup Repository</strong></td>
-        <td><a href="https://github.com/RonHatibaruah/MargDristi-AI" target="_blank">https://github.com/RonHatibaruah/MargDristi-AI</a></td>
       </tr>
     </table>
   </div>
