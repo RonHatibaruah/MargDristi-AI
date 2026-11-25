@@ -136,12 +136,12 @@ export default function App() {
             </div>
           </div>
 
-          <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-2">
+          <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
             <div>
-              Department of Innovation, Incubation and Startups &amp; Public Works Department (PWD), Government of Assam.
+              <span className="font-semibold text-slate-700">Lead Applicant: Sambit Mohanty</span> &bull; Department of Innovation, Incubation and Startups &amp; Public Works Department (PWD), Government of Assam.
             </div>
             <div>
-              IRC:82-2015, ASTM D6433 &amp; DPDP Act 2023 Compliant.
+              <span className="font-medium text-slate-600">Copyright &copy; 2026 Cool Minds Lab</span> &bull; IRC:82-2015, ASTM D6433 &amp; DPDP Act 2023 Compliant.
             </div>
           </div>
         </div>

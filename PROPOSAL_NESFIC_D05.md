@@ -2,6 +2,8 @@
 **North East Seva First Innovation Challenge (NESFIC) 2026**
 **Department:** Public Works Department (PWD), Government of Assam  
 **Track:** Government Track (Deep-Tech MVP / Grant Tier: ₹40 Lakhs)  
+**Lead Applicant:** Sambit Mohanty  
+**Organization / Copyright:** Copyright © 2026 Cool Minds Lab. All rights reserved.  
 **Proposed Solution:** **MargDristi AI (मार्गदृष्टि)** — Edge-Vision & Geospatial Pavement Maintenance Prioritisation System
 
 ---
@@ -231,9 +233,9 @@ High-quality, context-specific data is the foundation of MargDristi’s computer
 The MargDristi team unites high-caliber technical expertise in artificial intelligence, geospatial software architecture, and highway civil engineering, supported by proven operational execution capabilities.
 
 ### Key Team Roles & Technical Profiles
-1. **Principal Investigator & AI/Computer Vision Lead (Full-time, 9 Months):**
+1. **Lead Applicant & Principal Investigator (Sambit Mohanty) — AI/Computer Vision Lead (Full-time, 9 Months):**
    - *Expertise:* M.Tech/Ph.D. in Computer Science / Machine Learning. 6+ years specializing in real-time object detection (YOLO, DETR), model quantization (TensorRT, OpenVINO), and edge deployment on mobile/embedded hardware.
-   - *Responsibilities:* Oversees model architecture, data augmentation pipelines, inference optimization, and detection accuracy benchmarks.
+   - *Responsibilities:* Project oversight, model architecture, data augmentation pipelines, inference optimization, and detection accuracy benchmarks.
 2. **Geospatial & Cloud Systems Architect (Full-time, 9 Months):**
    - *Expertise:* 5+ years in GIS application engineering, PostGIS spatial indexing, distributed systems (FastAPI, Redis, Celery), and cloud scalable microservices (AWS/GCP).
    - *Responsibilities:* Develops road snapping algorithms, spatial query optimization, GIS tile server, and executive dashboard backend.
@@ -390,3 +392,7 @@ A comprehensive 15-page Proof of Work PDF is submitted, containing:
 - **Demo / Product Video URL:** `https://margdrishti.coolmindslab.com/#tutorial` *(interactive guided walkthrough)*
 - **Product / Website URL:** `https://margdrishti.coolmindslab.com` *(Live production deployment)*
 - **Additional Supporting Material:** Attached technical whitepaper detailing the mathematical formulation of the IRC:82 Prioritisation Index and edge TensorRT optimization metrics.
+
+---
+**Copyright © 2026 Cool Minds Lab. All rights reserved.**  
+*Submitted under North East Seva First Innovation Challenge (NESFIC) 2026 for Government of Assam.*

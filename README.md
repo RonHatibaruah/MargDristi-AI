@@ -2,7 +2,9 @@
 ### Edge-Vision Road Surface Defect Detection & IRC:82 Maintenance Prioritisation System
 **North East Seva First Innovation Challenge (NESFIC) 2026**  
 **Track:** Government Track — Public Works Department (PWD), Government of Assam  
-**Challenge ID:** NESFIC-D-05 | Deep-Tech MVP Tier (₹40 Lakhs)
+**Challenge ID:** NESFIC-D-05 | Deep-Tech MVP Tier (₹40 Lakhs)  
+**Lead Applicant:** Sambit Mohanty  
+**Copyright:** Copyright © 2026 Cool Minds Lab. All rights reserved.  
 
 🌐 **Live Demo:** [https://margdrishti.coolmindslab.com](https://margdrishti.coolmindslab.com)
 

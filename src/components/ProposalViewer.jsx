@@ -356,7 +356,7 @@ export default function ProposalViewer() {
             NESFIC-D-05 Official Proposal Document Dossier
           </h2>
           <p className="text-xs text-slate-500 mt-0.5 font-medium">
-            North East Seva First Innovation Challenge 2026 • Government Track (PWD Assam) • Deep-Tech Tier (₹40 Lakhs)
+            Lead Applicant: <span className="font-semibold text-slate-800">Sambit Mohanty</span> • Copyright &copy; <span className="font-semibold text-slate-800">Cool Minds Lab</span> • NESFIC 2026 (PWD Assam)
           </p>
         </div>
 

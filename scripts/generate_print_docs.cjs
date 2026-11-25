@@ -370,6 +370,14 @@ const proposalHtml = `<!DOCTYPE html>
         <div class="meta-value" style="font-size: 9.5pt;">Government Deep-Tech MVP Track (₹40 Lakhs Maximum)</div>
       </div>
       <div>
+        <div class="meta-label">Lead Applicant</div>
+        <div class="meta-value" style="font-size: 9.5pt; color: #1e3a8a;">Sambit Mohanty</div>
+      </div>
+      <div>
+        <div class="meta-label">Copyright & Intellectual Property</div>
+        <div class="meta-value" style="font-size: 9pt; color: #0f172a;">Copyright &copy; 2026 Cool Minds Lab</div>
+      </div>
+      <div>
         <div class="meta-label">Client Department</div>
         <div class="meta-value" style="font-size: 9.5pt;">Public Works Department (PWD), Government of Assam</div>
       </div>
@@ -391,8 +399,8 @@ const proposalHtml = `<!DOCTYPE html>
     </div>
 
     <div class="cover-footer">
+      <span>Lead Applicant: Sambit Mohanty &bull; Copyright &copy; 2026 Cool Minds Lab</span>
       <span>Official Proposal &bull; Assam PWD Evaluation Committee</span>
-      <span>November 2026 &bull; Guwahati, Assam</span>
     </div>
   </div>
 
@@ -713,9 +721,9 @@ const proposalHtml = `<!DOCTYPE html>
     </thead>
     <tbody>
       <tr>
-        <td><strong>Principal Investigator & AI/CV Lead</strong><br><span class="pill-blue">Full-time, 9 Mos</span></td>
+        <td><strong>Lead Applicant &amp; Principal Investigator</strong><br><span style="font-size: 8.5pt; font-weight: 700; color: #1e3a8a;">Sambit Mohanty</span><br><span class="pill-blue">Full-time, 9 Mos</span></td>
         <td>M.Tech/Ph.D. in Computer Science/ML. 6+ years specializing in real-time object detection (YOLO, DETR), model quantization (TensorRT, OpenVINO), and edge embedded deployment.</td>
-        <td>Oversees model architecture, training pipelines, quantization, and edge latency benchmarks.</td>
+        <td>Project direction, model architecture, training pipelines, quantization, and edge latency benchmarks.</td>
       </tr>
       <tr>
         <td><strong>Geospatial & Cloud Architect</strong><br><span class="pill-blue">Full-time, 9 Mos</span></td>
@@ -972,8 +980,8 @@ const proposalHtml = `<!DOCTYPE html>
 
   <div class="footer-bar">
     <span>NESFIC 2026 &bull; Problem Statement NESFIC-D-05</span>
-    <span>MargDristi-AI &bull; PWD Government of Assam</span>
-    <span>Confidential &bull; Official Proposal Submission</span>
+    <span>Lead Applicant: Sambit Mohanty &bull; MargDristi-AI</span>
+    <span>Copyright &copy; 2026 Cool Minds Lab &bull; All Rights Reserved</span>
   </div>
 
 </body>
@@ -1140,6 +1148,14 @@ const powHtml = `<!DOCTYPE html>
         <div class="meta-value" style="font-size: 9.5pt;">Deep-Tech MVP Track (₹40 Lakhs Maximum)</div>
       </div>
       <div>
+        <div class="meta-label">Lead Applicant</div>
+        <div class="meta-value" style="font-size: 9.5pt; color: #1e3a8a;">Sambit Mohanty</div>
+      </div>
+      <div>
+        <div class="meta-label">Copyright & Intellectual Property</div>
+        <div class="meta-value" style="font-size: 9pt; color: #0f172a;">Copyright &copy; 2026 Cool Minds Lab</div>
+      </div>
+      <div>
         <div class="meta-label">Live Production URL</div>
         <div class="meta-value" style="font-size: 9.5pt;"><a href="https://margdrishti.coolmindslab.com" target="_blank">https://margdrishti.coolmindslab.com</a></div>
       </div>
@@ -1153,8 +1169,8 @@ const powHtml = `<!DOCTYPE html>
     </div>
 
     <div class="cover-footer">
+      <span>Lead Applicant: Sambit Mohanty &bull; Copyright &copy; 2026 Cool Minds Lab</span>
       <span>Official Submission &bull; Assam PWD Evaluation Committee</span>
-      <span>Published: November 2026 &bull; Guwahati, Assam</span>
     </div>
   </div>
 
@@ -1901,8 +1917,8 @@ const powHtml = `<!DOCTYPE html>
 
   <div class="footer-bar">
     <span>NESFIC 2026 &bull; Problem Statement NESFIC-D-05</span>
-    <span>MargDristi-AI &bull; Technical Evidence &amp; Proof of Work Dossier</span>
-    <span>Official Submission &bull; Page End</span>
+    <span>Lead Applicant: Sambit Mohanty &bull; MargDristi-AI</span>
+    <span>Copyright &copy; 2026 Cool Minds Lab &bull; All Rights Reserved</span>
   </div>
 
 </body>
